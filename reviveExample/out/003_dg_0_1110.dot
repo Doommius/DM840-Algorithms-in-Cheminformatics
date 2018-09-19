@@ -1,0 +1,44 @@
+digraph g {
+// id = 0, graphName = Graph 1
+"0-0" [ shape=ellipse label="Graph 1" image="out/000_g_0.1111110.svg" ];
+// id = 1, graphName = Graph 2
+"1-0" [ shape=ellipse label="Graph 2" image="out/001_g_1.1111110.svg" ];
+// id = 2, graphName = Graph 3
+"2-0" [ shape=ellipse label="Graph 3" image="out/002_g_2.1111110.svg" ];
+// id = 3, graphName = p_{0,0}
+"3-0" [ shape=ellipse label="p_{0,0}" image="out/004_g_3.1111110.svg" ];
+// id = 5, graphName = p_{0,1}
+"5-0" [ shape=ellipse label="p_{0,1}" image="out/005_g_4.1111110.svg" ];
+// id = 7, graphName = p_{0,2}
+"7-0" [ shape=ellipse label="p_{0,2}" image="out/006_g_6.1111110.svg" ];
+// id = 9, graphName = p_{0,3}
+"9-0" [ shape=ellipse label="p_{0,3}" image="out/007_g_9.1111110.svg" ];
+// id = 11, graphName = p_{0,4}
+"11-0" [ shape=ellipse label="p_{0,4}" image="out/008_g_10.1111110.svg" ];
+// id = 13, graphName = p_{0,5}
+"13-0" [ shape=ellipse label="p_{0,5}" image="out/009_g_12.1111110.svg" ];
+// id = 15, graphName = p_{0,6}
+"15-0" [ shape=ellipse label="p_{0,6}" image="out/010_g_13.1111110.svg" ];
+// id = 17, graphName = p_{0,7}
+"17-0" [ shape=ellipse label="p_{0,7}" image="out/011_g_14.1111110.svg" ];
+// id = 19, graphName = p_{0,8}
+"19-0" [ shape=ellipse label="p_{0,8}" image="out/012_g_15.1111110.svg" ];
+// id = 4{ 'Graph 1' }, 'Mark', { 'p_{0,0}' }
+"0-0" -> "3-0" [ label="r_{0}" ];
+// id = 6{ 'Graph 2' }, 'Mark', { 'p_{0,1}' }
+"1-0" -> "5-0" [ label="r_{0}" ];
+// id = 8{ 'Graph 3' }, 'Mark', { 'p_{0,2}' }
+"2-0" -> "7-0" [ label="r_{0}" ];
+// id = 10{ 'p_{0,1}' }, 'Mark', { 'p_{0,3}' }
+"5-0" -> "9-0" [ label="r_{0}" ];
+// id = 12{ 'p_{0,2}' }, 'Mark', { 'p_{0,4}' }
+"7-0" -> "11-0" [ label="r_{0}" ];
+// id = 14{ 'p_{0,4}' }, 'Mark', { 'p_{0,5}' }
+"11-0" -> "13-0" [ label="r_{0}" ];
+// id = 16{ 'p_{0,5}' }, 'Unmark', { 'p_{0,6}' }
+"13-0" -> "15-0" [ label="r_{1}" ];
+// id = 18{ 'p_{0,3}' }, 'Unmark', { 'p_{0,7}' }
+"9-0" -> "17-0" [ label="r_{1}" ];
+// id = 20{ 'p_{0,0}' }, 'Unmark', { 'p_{0,8}' }
+"3-0" -> "19-0" [ label="r_{1}" ];
+}

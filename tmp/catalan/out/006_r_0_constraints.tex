@@ -1,0 +1,5 @@
+|{ e in outEdges(0) }| = 3
+|{ e in outEdges(0) | label(target(e)) in { '0' } }| = 3
+|{ e in outEdges(1) | label(target(e)) in { 'R' 'A' } }| = 0
+|{ e in outEdges(2) | label(target(e)) in { 'R' 'A' } }| = 0
+|{ e in outEdges(3) | label(target(e)) in { 'R' 'A' } }| = 0

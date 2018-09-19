@@ -1,0 +1,10 @@
+\begin{tikzpicture}[remember picture, scale=\modGraphScale, baseline={([yshift={-\ht\strutbox}]current bounding box)}, thick]
+\input{\modInputPrefix/out/320_g_2030.mol.coord.tex}
+\node[modStyleGraphVertex, at=(v-coord-0)] (v-0) {\textbf{A}};
+\node[modStyleGraphVertex, at=(v-coord-1)] (v-1) {\textbf{R}};
+\node[modStyleGraphVertex, at=(v-coord-2)] (v-2) {\textbf{R}};
+\node[modStyleGraphVertex, at=(v-coord-3)] (v-3) {\textbf{R}};
+\modDrawSingleBond{0}{1}{1}{1}{}
+\modDrawSingleBond{0}{2}{1}{1}{}
+\modDrawSingleBond{0}{3}{1}{1}{}
+\end{tikzpicture}

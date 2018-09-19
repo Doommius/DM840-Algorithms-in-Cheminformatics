@@ -1,0 +1,173 @@
+Input --------------------------------------------------------------
+(see out/input)
+Command ------------------------------------------------------------
+ python3 out/input
+Running VM ---------------------------------------------------------
+Executing code from 'doIt.py'
+Executing code from 'rules.py'
+End of code from 'rules.py'
+Repeat, limit = 50
+   Substrat 0
+   Got 1 graphs
+   Substrat 1
+   Got 3 graphs
+   Substrat 2
+   Got 5 graphs
+   Substrat 3
+   Got 9 graphs
+   Substrat 4
+   Got 12 graphs
+   Substrat 5
+   Got 19 graphs
+   Substrat 6
+   Got 22 graphs
+   Substrat 7
+   Got 27 graphs
+   Substrat 8
+   Got 29 graphs
+   Substrat 9
+   Got 30 graphs
+   Substrat 10
+   Got 28 graphs
+   Substrat 11
+   Got 26 graphs
+   Substrat 12
+   Got 21 graphs
+   Substrat 13
+   Got 17 graphs
+   Substrat 14
+   Got 13 graphs
+   Substrat 15
+   Got 9 graphs
+   Substrat 16
+   Got 6 graphs
+   Substrat 17
+   Got 4 graphs
+   Substrat 18
+   Got 2 graphs
+   Substrat 19
+   Got 1 graphs
+   Substrat 20
+   Got 1 graphs
+   Substrat 21
+   Got 1 graphs
+   Substrat 22
+   Got 1 graphs
+   Substrat 23
+   Got 1 graphs
+   Substrat 24
+   Got 1 graphs
+   Substrat 25
+   Got 1 graphs
+   Substrat 26
+   Got 0 graphs
+Notice: Calculation of derivation graph done.
+Using user defined objective function: 0
+DGFlow: ========================================================================
+DG: DGRuleComp(0)
+Base: --------------------------------------------------------------------------
+Sources: 'Start' 
+Sinks:   'Goal' 
+Allow hyper-loops: false
+AllowReverse:      false
+AllowIOReverse: true
+Relaxed: false
+OverallCatalysis: --------------------------------------------------------------
+(disabled)
+OverallAutocatalysis: ----------------------------------------------------------
+(disabled)
+Non-module: --------------------------------------------------------------------
+ObjectiveFunction (user defined): 0
+Extra constraints:
+1 == inFlow('Start')
+Solver:	EnumerateBy
+absGap: 1073741824
+maxNumSolutions: 1
+enumerationVarSpecifier: <default>
+transitEnumeration:
+Base	#exploded transit edges	291
+Base	#transit edges, no opt	4761
+Base	#fixed variables	0
+DGFlow	Setting objective function
+Notice: linear expression '0' is 0.
+DGFlow	Adding user constraints
+FlowBase	model created
+Solving using EnumerateBy
+Enumeration by variable set (1445 variables)
+============================================================
+AbstractSolver:  non-fixed enumeration vars: 865
+Solving root node.
+Tried aggregator 4 times.
+MIP Presolve eliminated 2672 rows and 1752 columns.
+MIP Presolve modified 693 coefficients.
+Aggregator did 637 substitutions.
+Reduced MIP has 2492 rows, 1957 columns, and 7272 nonzeros.
+Reduced MIP has 1140 binaries, 817 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.01 sec. (12.54 ticks)
+Probing fixed 15 vars, tightened 1631 bounds.
+Probing time = 0.01 sec. (9.32 ticks)
+Cover probing fixed 0 vars, tightened 123 bounds.
+Tried aggregator 1 time.
+MIP Presolve eliminated 108 rows and 67 columns.
+MIP Presolve modified 374 coefficients.
+Reduced MIP has 2384 rows, 1890 columns, and 7054 nonzeros.
+Reduced MIP has 1095 binaries, 795 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (4.46 ticks)
+Probing fixed 0 vars, tightened 595 bounds.
+Probing time = 0.01 sec. (10.72 ticks)
+Cover probing fixed 0 vars, tightened 72 bounds.
+Clique table members: 5350.
+MIP emphasis: optimality.
+MIP search method: dynamic search.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (4.19 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0     0      integral     0        0.0000        0.0000       57    0.00%
+
+Root node processing (before b&c):
+  Real time             =    0.06 sec. (52.94 ticks)
+Sequential b&c:
+  Real time             =    0.00 sec. (0.00 ticks)
+                          ------------
+Total (root+branch&cut) =    0.06 sec. (52.94 ticks)
+      Nodes              Solutions     
+#Total    #Open     #Total    #Accepted  #Solves   Obj. value  Time (s)
+       1         1         0          0         1           0         0
+Enumeration of solutions with value 0
+1 of 1 MIP starts provided solutions.
+MIP start 'm1' defined initial solution with objective 0.0000.
+Tried aggregator 4 times.
+MIP Presolve eliminated 2672 rows and 1752 columns.
+MIP Presolve modified 693 coefficients.
+Aggregator did 637 substitutions.
+Reduced MIP has 2492 rows, 1957 columns, and 7272 nonzeros.
+Reduced MIP has 1140 binaries, 817 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.01 sec. (12.54 ticks)
+Probing fixed 15 vars, tightened 1631 bounds.
+Probing time = 0.01 sec. (9.32 ticks)
+Cover probing fixed 0 vars, tightened 123 bounds.
+Tried aggregator 1 time.
+MIP Presolve eliminated 108 rows and 67 columns.
+MIP Presolve modified 374 coefficients.
+Reduced MIP has 2384 rows, 1890 columns, and 7054 nonzeros.
+Reduced MIP has 1095 binaries, 795 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (4.46 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.03 sec. (33.55 ticks)
+Sequential b&c:
+  Real time             =    0.00 sec. (0.00 ticks)
+                          ------------
+Total (root+branch&cut) =    0.03 sec. (33.55 ticks)
+Ending search (by user request)
+       1         0         1          1         2           0         0
+DGFlow	num solutions	1
+DGFlow	Calculation done
+End of code from 'doIt.py'
+
+real	0m51.735s
+user	0m1.865s
+sys	0m0.235s

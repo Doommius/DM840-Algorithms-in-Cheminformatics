@@ -1,0 +1,14 @@
+Running VM ---------------------------------------------------------
+Executing code from 'doIt.py'
+Traceback (most recent call last):
+  File "out/input", line 56, in <module>
+    include("doIt.py")
+  File "out/input", line 44, in include
+    exec(code, globals())
+  File "doIt.py", line 11, in <module>
+    for a in g: a.print()
+NameError: name 'g' is not defined
+
+real	0m0.488s
+user	0m0.178s
+sys	0m0.016s

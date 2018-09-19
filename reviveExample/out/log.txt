@@ -1,0 +1,126 @@
+Input --------------------------------------------------------------
+(see out/input)
+Command ------------------------------------------------------------
+ python3 out/input
+Running VM ---------------------------------------------------------
+Executing code from 'dgRepeatRevive.py'
+Executing code from 'grammar.py'
+Graph 1 GML file: out/000_g_0.gml
+Graph 2 GML file: out/001_g_1.gml
+Graph 3 GML file: out/002_g_2.gml
+End of code from 'grammar.py'
+Repeat, limit = 4294967295
+   Substrat 0
+   Got 3 graphs
+   Substrat 1
+   Got 3 graphs
+   Substrat 2
+   Got 3 graphs
+   Substrat 3
+   Got 3 graphs
+Notice: Calculation of derivation graph done.
+Sequence: 3 substrats
+   Substrat 0:
+      Add: Graph 1 Graph 2 Graph 3
+         input:
+            subset 0 =
+            universe =
+         output:
+            subset 0 = Graph 1 Graph 2 Graph 3
+            universe = Graph 1 Graph 2 Graph 3
+   Substrat 1:
+      Repeat, limit = 4294967295
+         Substrat 0:
+            Revive:
+               Rule: Mark
+                  input:
+                     subset 0 = Graph 1 Graph 2 Graph 3
+                     universe = Graph 1 Graph 2 Graph 3
+                  output:
+                     subset 0 = p_{0,0} p_{0,1} p_{0,2}
+                     universe = Graph 1 Graph 2 Graph 3 p_{0,0} p_{0,1} p_{0,2}
+                  consumed = Graph 1 Graph 2 Graph 3
+               input:
+                  subset 0 = Graph 1 Graph 2 Graph 3
+                  universe = Graph 1 Graph 2 Graph 3
+               output:
+                  subset 0 = p_{0,0} p_{0,1} p_{0,2}
+                  universe = Graph 1 Graph 2 Graph 3 p_{0,0} p_{0,1} p_{0,2}
+               revived =
+         Substrat 1:
+            Revive:
+               Rule: Mark
+                  input:
+                     subset 0 = p_{0,0} p_{0,1} p_{0,2}
+                     universe = Graph 1 Graph 2 Graph 3 p_{0,0} p_{0,1} p_{0,2}
+                  output:
+                     subset 0 = p_{0,3} p_{0,4}
+                     universe = Graph 1 Graph 2 Graph 3 p_{0,0} p_{0,1} p_{0,2} p_{0,3} p_{0,4}
+                  consumed = p_{0,1} p_{0,2}
+               input:
+                  subset 0 = p_{0,0} p_{0,1} p_{0,2}
+                  universe = Graph 1 Graph 2 Graph 3 p_{0,0} p_{0,1} p_{0,2}
+               output:
+                  subset 0 = p_{0,3} p_{0,4} p_{0,0}
+                  universe = Graph 1 Graph 2 Graph 3 p_{0,0} p_{0,1} p_{0,2} p_{0,3} p_{0,4}
+               revived = p_{0,0}
+         Substrat 2:
+            Revive:
+               Rule: Mark
+                  input:
+                     subset 0 = p_{0,3} p_{0,4} p_{0,0}
+                     universe = Graph 1 Graph 2 Graph 3 p_{0,0} p_{0,1} p_{0,2} p_{0,3} p_{0,4}
+                  output:
+                     subset 0 = p_{0,5}
+                     universe = Graph 1 Graph 2 Graph 3 p_{0,0} p_{0,1} p_{0,2} p_{0,3} p_{0,4} p_{0,5}
+                  consumed = p_{0,4}
+               input:
+                  subset 0 = p_{0,3} p_{0,4} p_{0,0}
+                  universe = Graph 1 Graph 2 Graph 3 p_{0,0} p_{0,1} p_{0,2} p_{0,3} p_{0,4}
+               output:
+                  subset 0 = p_{0,5} p_{0,3} p_{0,0}
+                  universe = Graph 1 Graph 2 Graph 3 p_{0,0} p_{0,1} p_{0,2} p_{0,3} p_{0,4} p_{0,5}
+               revived = p_{0,3} p_{0,0}
+         Substrat 3:
+            Revive:
+               Rule: Mark
+                  input:
+                     subset 0 = p_{0,5} p_{0,3} p_{0,0}
+                     universe = Graph 1 Graph 2 Graph 3 p_{0,0} p_{0,1} p_{0,2} p_{0,3} p_{0,4} p_{0,5}
+                  output:
+                     subset 0 =
+                     universe = Graph 1 Graph 2 Graph 3 p_{0,0} p_{0,1} p_{0,2} p_{0,3} p_{0,4} p_{0,5}
+                  consumed =
+               input:
+                  subset 0 = p_{0,5} p_{0,3} p_{0,0}
+                  universe = Graph 1 Graph 2 Graph 3 p_{0,0} p_{0,1} p_{0,2} p_{0,3} p_{0,4} p_{0,5}
+               output:
+                  subset 0 = p_{0,5} p_{0,3} p_{0,0}
+                  universe = Graph 1 Graph 2 Graph 3 p_{0,0} p_{0,1} p_{0,2} p_{0,3} p_{0,4} p_{0,5}
+               revived = p_{0,5} p_{0,3} p_{0,0}
+         input:
+            subset 0 = Graph 1 Graph 2 Graph 3
+            universe = Graph 1 Graph 2 Graph 3
+         output:
+            subset 0 = p_{0,5} p_{0,3} p_{0,0}
+            universe = Graph 1 Graph 2 Graph 3 p_{0,0} p_{0,1} p_{0,2} p_{0,3} p_{0,4} p_{0,5}
+   Substrat 2:
+      Rule: Unmark
+         input:
+            subset 0 = p_{0,5} p_{0,3} p_{0,0}
+            universe = Graph 1 Graph 2 Graph 3 p_{0,0} p_{0,1} p_{0,2} p_{0,3} p_{0,4} p_{0,5}
+         output:
+            subset 0 = p_{0,6} p_{0,7} p_{0,8}
+            universe = Graph 1 Graph 2 Graph 3 p_{0,0} p_{0,1} p_{0,2} p_{0,3} p_{0,4} p_{0,5} p_{0,6} p_{0,7} p_{0,8}
+         consumed = p_{0,0} p_{0,3} p_{0,5}
+   input:
+      subset 0 =
+      universe =
+   output:
+      subset 0 = p_{0,6} p_{0,7} p_{0,8}
+      universe = Graph 1 Graph 2 Graph 3 p_{0,0} p_{0,1} p_{0,2} p_{0,3} p_{0,4} p_{0,5} p_{0,6} p_{0,7} p_{0,8}
+End of code from 'dgRepeatRevive.py'
+
+real	0m2.377s
+user	0m0.182s
+sys	0m0.033s

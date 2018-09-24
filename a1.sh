@@ -7,5 +7,6 @@ export LD_LIBRARY_PATH=/mnt/nfs/Shared/jlandersen/shared/lib64:$LD_LIBRARY_PATH
 
 cd /home/imada/mjerv15/courses/DM840/assignment1/formose
 git pull
+pwd
 mod -f doStuff.py
 cd ..

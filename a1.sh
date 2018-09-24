@@ -8,8 +8,9 @@ cd /home/imada/mjerv15/courses/DM840/assignment1/formose
 git pull
 pwd
 mod -f doStuff.py
-scp summary/summary.pdf alzira:WWWpublic/dm840/
-
+mv summary/summary.pdf summary/formose.pdf
+scp summary/formose.pdf alzira:WWWpublic/dm840/
+rm summary/formose.pdf
 
 
 

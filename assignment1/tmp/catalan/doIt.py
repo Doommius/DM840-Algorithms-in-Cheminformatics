@@ -1,4 +1,4 @@
-config.chem.checkMoleculeVerbose = False # don't touch this, or you will be spammed to death
+#config.chem.checkMoleculeVerbose = False # don't touch this, or you will be spammed to death
 dgPrinter = DGPrinter()
 dgPrinter.withGraphImages =False # be careful, the derivation graphs can become quite large
 flowPrinter = DGFlowPrinter()

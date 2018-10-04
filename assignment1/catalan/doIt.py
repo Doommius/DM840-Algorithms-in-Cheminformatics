@@ -9,6 +9,7 @@ goal = graphDFS("[0]", "Goal")
 level = graphGML(levelFile, "Start")
 postSection("Loaded Graphs")
 
+
 include("rules.py")
 
 postSection("Loaded Rules")
@@ -19,6 +20,8 @@ strategy = (addSubset(level) >> repeat[steps](r))
 
 dg = dgRuleComp({goal, level}, strategy)
 dg.calc()
+
+for a in g: a.print()
 
 dg.print(dgPrinter)
 postSection("Product Graphs")

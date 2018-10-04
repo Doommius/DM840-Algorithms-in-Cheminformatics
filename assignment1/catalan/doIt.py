@@ -5,7 +5,7 @@ flowPrinter = DGFlowPrinter()
 flowPrinter.printUnfiltered = False
 config.ilp.solverVerbose = True
 
-goal = graphDFS("[0]", "Goal")
+g = graphDFS("[0]", "Goal")
 level = graphGML(levelFile, "Start")
 postSection("Loaded Graphs")
 for a in g: a.print()

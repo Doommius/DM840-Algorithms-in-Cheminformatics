@@ -12,6 +12,9 @@ mv summary/summary.pdf summary/formose.pdf
 scp summary/formose.pdf alzira:WWWpublic/dm840/
 rm summary/formose.pdf
 
+cd ../raindeer/
+mod -f raindeer.py
+
 cd ../catalan/
 sh solve.sh 1
 

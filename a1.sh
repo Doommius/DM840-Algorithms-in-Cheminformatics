@@ -12,11 +12,22 @@ mv summary/summary.pdf summary/formose.pdf
 scp summary/formose.pdf alzira:WWWpublic/dm840/
 rm summary/formose.pdf
 
+echo"----------------------------------------------------------"
+echo "done with formose"
+echo"----------------------------------------------------------"
+
 cd ../reindeer/
 mod -f reindeer.py
+echo"----------------------------------------------------------"
+echo "done with Reindeer"
+echo"----------------------------------------------------------"
 
 cd ../catalan/
 sh solve.sh 1
+
+echo"----------------------------------------------------------"
+echo "done with Catalan"
+echo"----------------------------------------------------------"
 
 
 

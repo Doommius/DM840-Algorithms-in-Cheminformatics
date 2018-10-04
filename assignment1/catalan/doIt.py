@@ -8,7 +8,6 @@ config.ilp.solverVerbose = True
 goal = graphDFS("[0]", "Goal")
 level = graphGML(levelFile, "Start")
 postSection("Loaded Graphs")
-for a in g: a.print()
 
 include("rules.py")
 
@@ -32,3 +31,4 @@ flow.addSink(goal)
 flow.addConstraint(inFlow(level) == 1)
 flow.calc()
 flow.solutions.print(flowPrinter)
+

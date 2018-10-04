@@ -12,3 +12,6 @@ if test "x$steps" = "x"; then
 fi;
 mod -e "levelFile = \"levels/level_$levelNum.gml\"
 steps = $steps" -f doIt.py
+
+
+mod -e "levelFile = levels/1levelNum.gml 1" -f doIt.py

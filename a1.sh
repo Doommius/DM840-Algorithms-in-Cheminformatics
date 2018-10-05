@@ -24,6 +24,9 @@ echo"----------------------------------------------------------"
 
 cd ../reindeer/
 mod -f reindeer.py
+mv summary/summary.pdf summary/reindeer.pdf
+scp summary/reindeer.pdf alzira:WWWpublic/dm840/
+rm summary/reindeer.pdf
 echo"----------------------------------------------------------"
 echo "done with Reindeer"
 echo "beginning with Catalan"
@@ -31,6 +34,9 @@ echo"----------------------------------------------------------"
 
 cd ../catalan/
 sh solve.sh 1
+mv summary/summary.pdf summary/catalan.pdf
+scp summary/catalan.pdf alzira:WWWpublic/dm840/
+rm summary/catalan.pdf
 
 echo"----------------------------------------------------------"
 echo "done with Catalan"

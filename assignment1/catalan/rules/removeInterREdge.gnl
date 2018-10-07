@@ -1,5 +1,5 @@
 rule [
-	ruleID "Mark for conversion"
+	ruleID "Remove internal edge"
 	left [
 		edge [ source 2 target 3 label "-" ]
 	]

@@ -1,7 +1,7 @@
 rule [
 	ruleID "Remove internal edge"
 	left [
-		edge [ source 2 target 3 label "-" ]
+		edge [ source 1 target 2 label "-" ]
 	]
 	context [
 			node [ id 0 label "A" ]

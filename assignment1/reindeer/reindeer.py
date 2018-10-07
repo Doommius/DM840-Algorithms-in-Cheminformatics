@@ -11,6 +11,7 @@ t = "TAAAEBBBS"
 g = graphDFS("".join("[%s]" % a for a in s))
 g.print()
 goal = graphDFS("".join("[%s]" % a for a in t))
+goal = graphDFS("[0]", "Goal")
 goal.print()
 
 # template for a rule, needs to be completed
@@ -143,7 +144,7 @@ bStep_backwards = ruleGMLString("""rule [
 
 for a in inputRules: a.print()
 
-dg = dgRuleComp(inputGraphs, addSubset(g) >> repeat[2](inputRules))
+dg = dgRuleComp(inputGraphs, addSubset(g) >> repeat(inputRules))
 dg.calc()
 p = DGPrinter()
 

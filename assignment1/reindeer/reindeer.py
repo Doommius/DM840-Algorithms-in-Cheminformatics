@@ -11,7 +11,6 @@ t = "TAAAEBBBS"
 g = graphDFS("".join("[%s]" % a for a in s))
 g.print()
 goal = graphDFS("".join("[%s]" % a for a in t))
-# goal = graphDFS("[0]", "Goal")
 goal.print()
 
 # template for a rule, needs to be completed

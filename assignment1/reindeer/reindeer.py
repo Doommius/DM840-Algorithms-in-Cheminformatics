@@ -68,69 +68,80 @@ bJump = ruleGMLString("""rule [
 aStep = ruleGMLString("""rule [
 	ruleID "A step"
 	left [
-	        edge [ source 1 target 2 label "-" ]
+	    edge [ source 0 target 1 label "-" ]
+        edge [ source 2 target 3 label "-" ]
 
 	]
 	context [
-
+    node [ id 0 label "A" ]
+    node [ id 1 label "A" ]
+    node [ id 2 label "E" ]
+    node [ id 3 label "B" ]
 	]
 	right [
-
+	    edge [ source 0 target 2 label "-" ]
+        edge [ source 1 target 3 label "-" ]
 	]
 ]""")
 
 bStep = ruleGMLString("""rule [
-	ruleID "B step"
+	ruleID "A step"
 	left [
-        edge [ source 1 target 2 label "-" ]
-	]
-	context [
-
-	]
-	right [
-
-	]
-]""")
-
-aStep_backwards = ruleGMLString("""rule [
-	ruleID "A step backwards"
-	left [
-        edge [ source 1 target 2 label "-" ]
-	]
-	context [
-
-	]
-	right [
-
-	]
-]""")
-
-bStep_backwards = ruleGMLString("""rule [
-	ruleID "B step backwards"
-	left [
-edge [ source 1 target 2 label "-" ]
-	]
-	context [
-
-	]
-	right [
-
-	]
-]""")
-
-# yup.
-terminate = ruleGMLString("""rule [
-	ruleID "terminate"
-	left [
+	    edge [ source 0 target 1 label "-" ]
+        edge [ source 2 target 3 label "-" ]
 
 	]
 	context [
-
+    node [ id 0 label "B" ]
+    node [ id 1 label "B" ]
+    node [ id 2 label "E" ]
+    node [ id 3 label "A" ]
 	]
 	right [
-
+	    edge [ source 0 target 2 label "-" ]
+        edge [ source 1 target 3 label "-" ]
 	]
 ]""")
+#
+# aStep_backwards = ruleGMLString("""rule [
+# 	ruleID "A step backwards"
+# 	left [
+#         edge [ source 1 target 2 label "-" ]
+# 	]
+# 	context [
+#
+# 	]
+# 	right [
+#
+# 	]
+# ]""")
+#
+# bStep_backwards = ruleGMLString("""rule [
+# 	ruleID "B step backwards"
+# 	left [
+# edge [ source 1 target 2 label "-" ]
+# 	]
+# 	context [
+#
+# 	]
+# 	right [
+#
+# 	]
+# ]""")
+#
+# # yup.
+# terminate = ruleGMLString("""rule [
+# 	ruleID "terminate"
+# 	left [
+#
+# 	]
+# 	context [
+#
+# 	]
+# 	right [
+#
+# 	]
+# ]""")
 # Here you probably need more rules
 # ...
 #

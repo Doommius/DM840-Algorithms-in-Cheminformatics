@@ -15,19 +15,19 @@ rule [
 
 	constrainAdj [
 		id 0
-		op =
+		op "="
 		count 1
 		nodeLabels [ label "A" label "R" ]
 	]
 	constrainAdj [
 		id 1
-		op =
+		op "="
 		count 1
 		nodeLabels [ label "A" label "R" ]
 	]
 	constrainAdj [
 		id 2
-		op =
+		op "="
 		count 1
 		nodeLabels [ label "A" label "R" ]
 	]

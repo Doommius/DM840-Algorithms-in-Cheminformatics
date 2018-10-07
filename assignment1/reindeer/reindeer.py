@@ -11,7 +11,7 @@ goal = graphDFS("".join("[%s]" % a for a in t))
 goal.print()
 
 # template for a rule, needs to be completed
-#
+# we need foreward backwards rule for the step!
 
 aJump = ruleGMLString("""rule [
 	ruleID "A Jump"
@@ -26,6 +26,88 @@ aJump = ruleGMLString("""rule [
 	]
 ]""")
 
+
+
+bJump = ruleGMLString("""rule [
+	ruleID "B Jump"
+	left [
+
+	]
+	context [
+
+	]
+	right [
+
+	]
+]""")
+
+aStep = ruleGMLString("""rule [
+	ruleID "A step"
+	left [
+
+	]
+	context [
+
+	]
+	right [
+
+	]
+]""")
+
+
+bStep = ruleGMLString("""rule [
+	ruleID "B step"
+	left [
+
+	]
+	context [
+
+	]
+	right [
+
+	]
+]""")
+
+aStep_backwards = ruleGMLString("""rule [
+	ruleID "A step backwards"
+	left [
+
+	]
+	context [
+
+	]
+	right [
+
+	]
+]""")
+
+
+bStep_backwards = ruleGMLString("""rule [
+	ruleID "B step backwards"
+	left [
+
+	]
+	context [
+
+	]
+	right [
+
+	]
+]""")
+
+#yup.
+terminate = ruleGMLString("""rule [
+	ruleID "terminate"
+	left [
+
+	]
+	context [
+
+	]
+	right [
+
+	]
+]""")
 # Here you probably need more rules
 # ...
 #

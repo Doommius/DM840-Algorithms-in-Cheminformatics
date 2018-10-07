@@ -23,11 +23,11 @@ aJump = ruleGMLString("""rule [
         edge [ source 3 target 4 label "-" ]
 	]
 	context [
-    node [ id 0 label "A" ]
+    node [ id 0 label "*" ]
     node [ id 1 label "A" ]
     node [ id 2 label "B" ]
     node [ id 3 label "E" ]
-    node [ id 4 label "B" ]
+    node [ id 4 label "*" ]
 	]
 	right [
 	
@@ -48,11 +48,11 @@ bJump = ruleGMLString("""rule [
         edge [ source 3 target 4 label "-" ]
 	]
 	context [
-    node [ id 0 label "B" ]
+    node [ id 0 label "*" ]
     node [ id 1 label "E" ]
     node [ id 2 label "A" ]
     node [ id 3 label "B" ]
-    node [ id 4 label "B" ]
+    node [ id 4 label "*" ]
 	]
 	right [
 	
@@ -72,10 +72,10 @@ aStep = ruleGMLString("""rule [
 
 	]
 	context [
-    node [ id 0 label "A" ]
+    node [ id 0 label "*" ]
     node [ id 1 label "A" ]
     node [ id 2 label "E" ]
-    node [ id 3 label "B" ]
+    node [ id 3 label "*" ]
 	]
 	right [
 	    edge [ source 0 target 2 label "-" ]
@@ -91,61 +91,55 @@ bStep = ruleGMLString("""rule [
 
 	]
 	context [
-    node [ id 0 label "B" ]
+    node [ id 0 label "*" ]
     node [ id 1 label "B" ]
     node [ id 2 label "E" ]
-    node [ id 3 label "A" ]
+    node [ id 3 label "*" ]
 	]
 	right [
 	    edge [ source 0 target 2 label "-" ]
         edge [ source 1 target 3 label "-" ]
 	]
 ]""")
-#
-# aStep_backwards = ruleGMLString("""rule [
-# 	ruleID "A step backwards"
-# 	left [
-#         edge [ source 1 target 2 label "-" ]
-# 	]
-# 	context [
-#
-# 	]
-# 	right [
-#
-# 	]
-# ]""")
-#
-# bStep_backwards = ruleGMLString("""rule [
-# 	ruleID "B step backwards"
-# 	left [
-# edge [ source 1 target 2 label "-" ]
-# 	]
-# 	context [
-#
-# 	]
-# 	right [
-#
-# 	]
-# ]""")
-#
-# # yup.
-# terminate = ruleGMLString("""rule [
-# 	ruleID "terminate"
-# 	left [
-#
-# 	]
-# 	context [
-#
-# 	]
-# 	right [
-#
-# 	]
-# ]""")
-# Here you probably need more rules
-# ...
-#
-#
 
+aStep_backwards = ruleGMLString("""rule [
+	ruleID "A step bw"
+	left [
+	    edge [ source 0 target 1 label "-" ]
+        edge [ source 2 target 3 label "-" ]
+
+	]
+	context [
+    node [ id 0 label "*" ]
+    node [ id 1 label "E" ]
+    node [ id 2 label "B" ]
+    node [ id 3 label "*" ]
+	]
+	right [
+	    edge [ source 0 target 2 label "-" ]
+        edge [ source 1 target 3 label "-" ]
+	]
+]""")
+
+
+bStep_backwards = ruleGMLString("""rule [
+	ruleID "B step bw"
+	left [
+	    edge [ source 0 target 1 label "-" ]
+        edge [ source 2 target 3 label "-" ]
+
+	]
+	context [
+    node [ id 0 label "*" ]
+    node [ id 1 label "E" ]
+    node [ id 2 label "A" ]
+    node [ id 3 label "*" ]
+	]
+	right [
+	    edge [ source 0 target 2 label "-" ]
+        edge [ source 1 target 3 label "-" ]
+	]
+]""")
 
 for a in inputRules: a.print()
 

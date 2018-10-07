@@ -5,38 +5,62 @@
 #
 s = "SAAAEBBBT"
 t = "TAAAEBBBS"
+
+
+
 g = graphDFS("".join("[%s]" % a for a in s))
 g.print()
 goal = graphDFS("".join("[%s]" % a for a in t))
 goal.print()
 
 # template for a rule, needs to be completed
-# we need foreward backwards rule for the step!
-
 aJump = ruleGMLString("""rule [
 	ruleID "A Jump"
 	left [
-
+        edge [ source 0 target 1 label "-" ]
+        edge [ source 1 target 2 label "-" ]
+        edge [ source 2 target 3 label "-" ]
+        edge [ source 3 target 4 label "-" ]
 	]
+	ruleID "A Jump"
 	context [
-
+    node [ id 0 label "A" ]
+    node [ id 1 label "A" ]
+    node [ id 2 label "B" ]
+    node [ id 3 label "E" ]
+    node [ id 4 label "B" ]
 	]
 	right [
+	
+        edge [ source 0 target 3 label "-" ]
+        edge [ source 1 target 2 label "-" ]
+        edge [ source 2 target 4 label "-" ]
+        edge [ source 3 target 1 label "-" ]
 
 	]
 ]""")
 
-
-
 bJump = ruleGMLString("""rule [
-	ruleID "B Jump"
+	ruleID "A Jump"
 	left [
-
+        edge [ source 0 target 1 label "-" ]
+        edge [ source 1 target 2 label "-" ]
+        edge [ source 2 target 3 label "-" ]
+        edge [ source 3 target 4 label "-" ]
 	]
 	context [
-
+    node [ id 0 label "B" ]
+    node [ id 1 label "E" ]
+    node [ id 2 label "A" ]
+    node [ id 3 label "B" ]
+    node [ id 4 label "B" ]
 	]
 	right [
+	
+        edge [ source 0 target 3 label "-" ]
+        edge [ source 1 target 2 label "-" ]
+        edge [ source 2 target 4 label "-" ]
+        edge [ source 3 target 1 label "-" ]
 
 	]
 ]""")
@@ -44,6 +68,7 @@ bJump = ruleGMLString("""rule [
 aStep = ruleGMLString("""rule [
 	ruleID "A step"
 	left [
+	        edge [ source 1 target 2 label "-" ]
 
 	]
 	context [
@@ -54,11 +79,10 @@ aStep = ruleGMLString("""rule [
 	]
 ]""")
 
-
 bStep = ruleGMLString("""rule [
 	ruleID "B step"
 	left [
-
+        edge [ source 1 target 2 label "-" ]
 	]
 	context [
 
@@ -71,7 +95,7 @@ bStep = ruleGMLString("""rule [
 aStep_backwards = ruleGMLString("""rule [
 	ruleID "A step backwards"
 	left [
-
+        edge [ source 1 target 2 label "-" ]
 	]
 	context [
 
@@ -80,12 +104,11 @@ aStep_backwards = ruleGMLString("""rule [
 
 	]
 ]""")
-
 
 bStep_backwards = ruleGMLString("""rule [
 	ruleID "B step backwards"
 	left [
-
+edge [ source 1 target 2 label "-" ]
 	]
 	context [
 
@@ -95,7 +118,7 @@ bStep_backwards = ruleGMLString("""rule [
 	]
 ]""")
 
-#yup.
+# yup.
 terminate = ruleGMLString("""rule [
 	ruleID "terminate"
 	left [
@@ -116,14 +139,17 @@ terminate = ruleGMLString("""rule [
 
 for a in inputRules: a.print()
 
-
 dg = dgRuleComp(inputGraphs, addSubset(g) >> repeat(inputRules))
 dg.calc()
 p = DGPrinter()
+
+
 def setPrinter(p):
-	p.withRuleName = True
-	p.pushVertexColour(lambda a, dg: "blue" if a == g else "")
-	p.pushVertexColour(lambda a, dg: "red" if a == goal else "")
+    p.withRuleName = True
+    p.pushVertexColour(lambda a, dg: "blue" if a == g else "")
+    p.pushVertexColour(lambda a, dg: "red" if a == goal else "")
+
+
 setPrinter(p)
 config.dg.graphvizCoordsBegin = ' layout = "dot"; '
 dg.print(p)
@@ -141,4 +167,4 @@ flow.calc()
 fp = DGFlowPrinter()
 setPrinter(fp.dgPrinter)
 for s in flow.solutions:
-	s.print(fp)
+    s.print(fp)

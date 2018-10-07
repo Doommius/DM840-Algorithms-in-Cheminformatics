@@ -33,9 +33,9 @@ aJump = ruleGMLString("""rule [
 	right [
 	
         edge [ source 0 target 3 label "-" ]
-        edge [ source 1 target 2 label "-" ]
-        edge [ source 2 target 4 label "-" ]
-        edge [ source 3 target 1 label "-" ]
+        edge [ source 1 target 4 label "-" ]
+        edge [ source 2 target 1 label "-" ]
+        edge [ source 3 target 2 label "-" ]
 
 	]
 ]""")

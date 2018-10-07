@@ -41,7 +41,7 @@ aJump = ruleGMLString("""rule [
 ]""")
 
 bJump = ruleGMLString("""rule [
-	ruleID "A Jump"
+	ruleID "B Jump"
 	left [
         edge [ source 0 target 1 label "-" ]
         edge [ source 1 target 2 label "-" ]
@@ -85,7 +85,7 @@ aStep = ruleGMLString("""rule [
 ]""")
 
 bStep = ruleGMLString("""rule [
-	ruleID "A step"
+	ruleID "B step"
 	left [
 	    edge [ source 0 target 1 label "-" ]
         edge [ source 2 target 3 label "-" ]

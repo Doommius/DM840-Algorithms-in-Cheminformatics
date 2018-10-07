@@ -149,7 +149,7 @@ bStep = ruleGMLString("""rule [
 
 for a in inputRules: a.print()
 
-dg = dgRuleComp(inputGraphs, addSubset(g) >> repeat(inputRules))
+dg = dgRuleComp(inputGraphs, addSubset(g) >> repeat[2](inputRules))
 dg.calc()
 p = DGPrinter()
 

@@ -22,7 +22,6 @@ aJump = ruleGMLString("""rule [
         edge [ source 2 target 3 label "-" ]
         edge [ source 3 target 4 label "-" ]
 	]
-	ruleID "A Jump"
 	context [
     node [ id 0 label "A" ]
     node [ id 1 label "A" ]

@@ -75,6 +75,7 @@ aStep = ruleGMLString("""rule [
 	context [
     node [ id 0 label "*" ]
     node [ id 1 label "A" ]
+    edge [ source 1 target 2 label "-" ]
     node [ id 2 label "E" ]
     node [ id 3 label "*" ]
 	]
@@ -94,6 +95,7 @@ bStep = ruleGMLString("""rule [
 	context [
     node [ id 0 label "*" ]
     node [ id 1 label "B" ]
+    edge [ source 1 target 2 label "-" ]
     node [ id 2 label "E" ]
     node [ id 3 label "*" ]
 	]
@@ -113,6 +115,7 @@ aStep_backwards = ruleGMLString("""rule [
 	context [
     node [ id 0 label "*" ]
     node [ id 1 label "E" ]
+    edge [ source 1 target 2 label "-" ]
     node [ id 2 label "B" ]
     node [ id 3 label "*" ]
 	]
@@ -133,6 +136,7 @@ bStep_backwards = ruleGMLString("""rule [
 	context [
     node [ id 0 label "*" ]
     node [ id 1 label "E" ]
+    edge [ source 1 target 2 label "-" ]
     node [ id 2 label "A" ]
     node [ id 3 label "*" ]
 	]

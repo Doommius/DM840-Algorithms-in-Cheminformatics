@@ -11,7 +11,7 @@ t = "TAAAEBBBS"
 g = graphDFS("".join("[%s]" % a for a in s))
 g.print()
 goal = graphDFS("".join("[%s]" % a for a in t))
-goal = graphDFS("[0]", "Goal")
+# goal = graphDFS("[0]", "Goal")
 goal.print()
 
 # template for a rule, needs to be completed
@@ -166,7 +166,7 @@ dg.print(p)
 # likely a directed graph (i.e., not a hyper.graph)
 flow = dgFlow(dg)
 flow.addSource(g)
-flow.addSink(goal)
+# flow.addSink(goal)
 flow.addConstraint(inFlow(g) == 1)
 flow.calc()
 fp = DGFlowPrinter()

@@ -14,6 +14,10 @@ goal = graphDFS("".join("[%s]" % a for a in t))
 goal.print()
 
 # template for a rule, needs to be completed
+
+
+
+
 aJump = ruleGMLString("""rule [
 	ruleID "A Jump"
 	left [
@@ -146,6 +150,9 @@ bStep_backwards = ruleGMLString("""rule [
 ]""")
 
 for a in inputRules: a.print()
+
+ls = LabelSettings(LableType.Term, LaberRelation.Unification)
+# lsString = LabelSettings(LableType.String, LaberRelation.Unification)
 
 dg = dgRuleComp(inputGraphs, addSubset(g) >> repeat(inputRules))
 dg.calc()

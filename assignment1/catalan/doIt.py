@@ -15,6 +15,7 @@ include("rules.py")
 postSection("Loaded Rules")
 for a in r: a.print()
 
+
 # The following will need improvement, I guess ;)
 strategy = (addSubset(level) >> repeat[steps](r))
 

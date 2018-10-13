@@ -12,7 +12,7 @@ postSection("Loaded Graphs")
 
 include("rules.py")
 postSection("Loaded Rules")
-for a in r: a.print()
+for a in inputRules: a.print()
 
 
 # The following will need improvement, I guess ;)

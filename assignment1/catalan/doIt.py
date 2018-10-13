@@ -11,7 +11,6 @@ postSection("Loaded Graphs")
 
 
 include("rules.py")
-
 postSection("Loaded Rules")
 for a in r: a.print()
 

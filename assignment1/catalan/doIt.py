@@ -21,7 +21,7 @@ strategy = (addSubset(level) >> repeat[steps](inputRules))
 dg = dgRuleComp({goal, level}, strategy)
 dg.calc()
 
-for a in g: a.print()
+for a in inputGraphs: a.print()
 
 dg.print(dgPrinter)
 postSection("Product Graphs")

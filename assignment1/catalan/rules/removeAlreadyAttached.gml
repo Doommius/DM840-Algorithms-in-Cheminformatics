@@ -15,22 +15,4 @@ rule [
 	right [
 
 	]
-	constrainAdj [
-		id 1
-		op "="
-		count 0
-		nodeLabels [ label "0" ]
-	]
-	constrainAdj [
-		id 2
-		op "="
-		count 0
-		nodeLabels [ label "0" ]
-	]
-	constrainAdj [
-		id 3
-		op "="
-		count 0
-		nodeLabels [ label "0" ]
-	]
 ]

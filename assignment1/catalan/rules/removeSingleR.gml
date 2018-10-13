@@ -1,12 +1,15 @@
 rule [
-	ruleID "remove single node"
+	ruleID "reattach external edge"
 	left [
-		node [ id 0 label "R" ]
-		edge [ source 0 target 1 label "-" ]
+		edge [ source 1 target 2 label "-" ]
+
 	]
 	context [
-		node [ id 0 label "A" ]
-
+		edge [ source 0 target 1 label "-" ]
+		edge [ source 0 target 2 label "-" ]
+	    node [ id 0 label "A" ]
+		node [ id 1 label "R" ]
+		node [ id 2 label "0" ]
 	]
 	right [
 	]

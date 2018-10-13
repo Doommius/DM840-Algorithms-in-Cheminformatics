@@ -43,12 +43,12 @@ scp summary/catalan6.pdf alzira:WWWpublic/dm840/
 rm summary/catalan6.pdf
 
 sh solve.sh 7
-mv summary/summary7.pdf summary/catalan7.pdf
+mv summary/summary.pdf summary/catalan7.pdf
 scp summary/catalan7.pdf alzira:WWWpublic/dm840/
 rm summary/catalan7.pdf
 
 sh solve.sh 8
-mv summary/summary8.pdf summary/catalan8.pdf
+mv summary/summary.pdf summary/catalan8.pdf
 scp summary/catalan8.pdf alzira:WWWpublic/dm840/
 rm summary/catalan8.pdf
 

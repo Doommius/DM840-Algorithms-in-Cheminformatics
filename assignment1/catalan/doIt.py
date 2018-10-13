@@ -16,7 +16,7 @@ for a in inputRules: a.print()
 
 
 # The following will need improvement, I guess ;)
-strategy = (addSubset(level) >> repeat[steps](r))
+strategy = (addSubset(level) >> repeat[steps](inputRules))
 
 dg = dgRuleComp({goal, level}, strategy)
 dg.calc()

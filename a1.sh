@@ -25,17 +25,17 @@ rm summary/catalan2.pdf
 sh solve.sh 3
 mv summary/summary.pdf summary/catalan.pdf
 scp summary/catalan.pdf alzira:WWWpublic/dm840/
-rm summary/catalan2.pdf
+rm summary/catalan3.pdf
 
 sh solve.sh 4
 mv summary/summary.pdf summary/catalan.pdf
 scp summary/catalan.pdf alzira:WWWpublic/dm840/
-rm summary/catalan2.pdf
+rm summary/catalan4.pdf
 
 sh solve.sh 5
 mv summary/summary.pdf summary/catalan.pdf
 scp summary/catalan.pdf alzira:WWWpublic/dm840/
-rm summary/catalan2.pdf
+rm summary/catalan5.pdf
 
 sh solve.sh 34
 mv summary/summary.pdf summary/catalan.pdf

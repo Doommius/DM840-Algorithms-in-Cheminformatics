@@ -27,7 +27,7 @@ rule [
 		id 0
 		op "="
 		count 3
-		nodeLabels [ label "A" ]
+		nodeLabels [ label "A   " ]
 	]	
 	constrainAdj [
 		id 1

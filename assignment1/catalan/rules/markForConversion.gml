@@ -16,19 +16,13 @@ rule [
 		node [ id 1 label "R" ]
 		node [ id 2 label "R" ]
 		node [ id 3 label "R" ]
-	]		
-	constrainAdj [
-		id 0
-		op "="
-		count 0
-		nodeLabels [ label "0" ]
 	]
 	constrainAdj [
 		id 0
 		op "="
 		count 3
-		nodeLabels [ label "A   " ]
-	]	
+		nodeLabels [ label "0" ]
+	]
 	constrainAdj [
 		id 1
 		op "="

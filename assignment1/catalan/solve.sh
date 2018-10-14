@@ -10,5 +10,5 @@ if test "x$steps" = "x"; then
 	steps=1000000000
 	echo "Be carefull, the number of steps is defaulted to a lot."
 fi;
-mod -e "levelFile = \"levels/level_$levelNum.gml\"
+mod -j 8 -e "levelFile = \"levels/level_$levelNum.gml\"
 steps = $steps" -f doIt.py

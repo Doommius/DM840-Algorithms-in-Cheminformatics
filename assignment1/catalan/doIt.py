@@ -23,7 +23,8 @@ dg.calc()
 
 for a in inputGraphs: a.print()
 
-dg.print(dgPrinter)
+
+#dg.print(dgPrinter) ##This eats all the memory.
 postSection("Product Graphs")
 for a in dg.products: a.print() # this can take a while in the post processing
 

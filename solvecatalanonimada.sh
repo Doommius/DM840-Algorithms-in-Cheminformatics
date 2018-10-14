@@ -11,6 +11,7 @@ for i in $(seq 1 56); do
     sh solve.sh
     mv summary/summary.pdf summary/catalan$i.pdf
     scp summary/catalan$i.pdf alzira:WWWpublic/dm840/
+    ssh alzira 'chmod -R 777 WWWpublic/* '
 done
 
 echo "#################################################################################################################"

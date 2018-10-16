@@ -12,11 +12,10 @@ g.print()
 goal = graphDFS("".join("[%s]" % a for a in t))
 goal.print()
 
-
 AAEBstep = ruleGMLString("""rule [
 	ruleID "AAEB step"
 	left [
-        edge [ source 0 ta4rget 1 label "-" ]
+        edge [ source 0 target 1 label "-" ]
         edge [ source 1 target 2 label "-" ]
         edge [ source 2 target 3 label "-" ]
 	]
@@ -25,6 +24,108 @@ AAEBstep = ruleGMLString("""rule [
     node [ id 1 label "A" ]
     node [ id 2 label "E" ]
     node [ id 3 label "B" ]
+	]
+	right [
+        edge [ source 0 target 2 label "-" ]
+        edge [ source 1 target 3 label "-" ]
+        edge [ source 2 target 1 label "-" ]
+	]
+]""")
+
+AEBBstep = ruleGMLString("""rule [
+	ruleID "AEBB step"
+	left [
+        edge [ source 0 target 1 label "-" ]
+        edge [ source 1 target 2 label "-" ]
+        edge [ source 2 target 3 label "-" ]
+	]
+	context [
+    node [ id 0 label "A" ]
+    node [ id 1 label "E" ]
+    node [ id 2 label "B" ]
+    node [ id 3 label "B" ]
+	]
+	right [
+        edge [ source 0 target 2 label "-" ]
+        edge [ source 1 target 3 label "-" ]
+        edge [ source 2 target 1 label "-" ]
+	]
+]""")
+
+SAEBstep = ruleGMLString("""rule [
+	ruleID "SAEB step"
+	left [
+        edge [ source 0 target 1 label "-" ]
+        edge [ source 1 target 2 label "-" ]
+        edge [ source 2 target 3 label "-" ]
+	]
+	context [
+    node [ id 0 label "S" ]
+    node [ id 1 label "A" ]
+    node [ id 2 label "E" ]
+    node [ id 3 label "B" ]
+	]
+	right [
+        edge [ source 0 target 2 label "-" ]
+        edge [ source 1 target 3 label "-" ]
+        edge [ source 2 target 1 label "-" ]
+	]
+]""")
+
+
+BAETstep = ruleGMLString("""rule [
+	ruleID "AEBA step"
+	left [
+        edge [ source 0 target 1 label "-" ]
+        edge [ source 1 target 2 label "-" ]
+        edge [ source 2 target 3 label "-" ]
+	]
+	context [
+    node [ id 0 label "B" ]
+    node [ id 1 label "A" ]
+    node [ id 2 label "E" ]
+    node [ id 3 label "T" ]
+	]
+	right [
+        edge [ source 0 target 2 label "-" ]
+        edge [ source 1 target 3 label "-" ]
+        edge [ source 2 target 1 label "-" ]
+	]
+]""")
+
+
+BEBAstep = ruleGMLString("""rule [
+	ruleID "AEBA step"
+	left [
+        edge [ source 0 target 1 label "-" ]
+        edge [ source 1 target 2 label "-" ]
+        edge [ source 2 target 3 label "-" ]
+	]
+	context [
+    node [ id 0 label "B" ]
+    node [ id 1 label "E" ]
+    node [ id 2 label "B" ]
+    node [ id 3 label "A" ]
+	]
+	right [
+        edge [ source 0 target 2 label "-" ]
+        edge [ source 1 target 3 label "-" ]
+        edge [ source 2 target 1 label "-" ]
+	]
+]""")
+
+BAEAstep = ruleGMLString("""rule [
+	ruleID "AEBA step"
+	left [
+        edge [ source 0 target 1 label "-" ]
+        edge [ source 1 target 2 label "-" ]
+        edge [ source 2 target 3 label "-" ]
+	]
+	context [
+    node [ id 0 label "B" ]
+    node [ id 1 label "A" ]
+    node [ id 2 label "E" ]
+    node [ id 3 label "A" ]
 	]
 	right [
         edge [ source 0 target 2 label "-" ]
@@ -55,26 +156,6 @@ AEABBjump = ruleGMLString("""rule [
         edge [ source 2 target 1 label "-" ]
         edge [ source 3 target 2 label "-" ]
 
-	]
-]""")
-
-AEBBstep = ruleGMLString("""rule [
-	ruleID "AEBB step"
-	left [
-        edge [ source 0 ta4rget 1 label "-" ]
-        edge [ source 1 target 2 label "-" ]
-        edge [ source 2 target 3 label "-" ]
-	]
-	context [
-    node [ id 0 label "A" ]
-    node [ id 1 label "E" ]
-    node [ id 2 label "B" ]
-    node [ id 3 label "B" ]
-	]
-	right [
-        edge [ source 0 target 2 label "-" ]
-        edge [ source 1 target 3 label "-" ]
-        edge [ source 2 target 1 label "-" ]
 	]
 ]""")
 
@@ -125,26 +206,6 @@ AABEBjump = ruleGMLString("""rule [
         edge [ source 2 target 1 label "-" ]
         edge [ source 3 target 2 label "-" ]
 
-	]
-]""")
-
-SAEBstep = ruleGMLString("""rule [
-	ruleID "SAEB step"
-	left [
-        edge [ source 0 ta4rget 1 label "-" ]
-        edge [ source 1 target 2 label "-" ]
-        edge [ source 2 target 3 label "-" ]
-	]
-	context [
-    node [ id 0 label "S" ]
-    node [ id 1 label "A" ]
-    node [ id 2 label "E" ]
-    node [ id 3 label "B" ]
-	]
-	right [
-        edge [ source 0 target 2 label "-" ]
-        edge [ source 1 target 3 label "-" ]
-        edge [ source 2 target 1 label "-" ]
 	]
 ]""")
 
@@ -223,26 +284,6 @@ AEABTjump = ruleGMLString("""rule [
 	]
 ]""")
 
-BAETstep = ruleGMLString("""rule [
-	ruleID "AEBA step"
-	left [
-        edge [ source 0 target 1 label "-" ]
-        edge [ source 1 target 2 label "-" ]
-        edge [ source 2 target 3 label "-" ]
-	]
-	context [
-    node [ id 0 label "B" ]
-    node [ id 1 label "A" ]
-    node [ id 2 label "E" ]
-    node [ id 3 label "T" ]
-	]
-	right [
-        edge [ source 0 target 2 label "-" ]
-        edge [ source 1 target 3 label "-" ]
-        edge [ source 2 target 1 label "-" ]
-	]
-]""")
-
 BABEAjump = ruleGMLString("""rule [
 	ruleID "BABEA Jump"
 	left [
@@ -265,26 +306,6 @@ BABEAjump = ruleGMLString("""rule [
         edge [ source 2 target 1 label "-" ]
         edge [ source 3 target 2 label "-" ]
 
-	]
-]""")
-
-BEBAstep = ruleGMLString("""rule [
-	ruleID "AEBA step"
-	left [
-        edge [ source 0 target 1 label "-" ]
-        edge [ source 1 target 2 label "-" ]
-        edge [ source 2 target 3 label "-" ]
-	]
-	context [
-    node [ id 0 label "B" ]
-    node [ id 1 label "E" ]
-    node [ id 2 label "B" ]
-    node [ id 3 label "A" ]
-	]
-	right [
-        edge [ source 0 target 2 label "-" ]
-        edge [ source 1 target 3 label "-" ]
-        edge [ source 2 target 1 label "-" ]
 	]
 ]""")
 
@@ -312,27 +333,6 @@ BEABAjump = ruleGMLString("""rule [
 
 	]
 ]""")
-
-BAEAstep = ruleGMLString("""rule [
-	ruleID "AEBA step"
-	left [
-        edge [ source 0 target 1 label "-" ]
-        edge [ source 1 target 2 label "-" ]
-        edge [ source 2 target 3 label "-" ]
-	]
-	context [
-    node [ id 0 label "B" ]
-    node [ id 1 label "A" ]
-    node [ id 2 label "E" ]
-    node [ id 3 label "A" ]
-	]
-	right [
-        edge [ source 0 target 2 label "-" ]
-        edge [ source 1 target 3 label "-" ]
-        edge [ source 2 target 1 label "-" ]
-	]
-]""")
-
 
 # aJump = ruleGMLString("""rule [
 # 	ruleID "A Jump"

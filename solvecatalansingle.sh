@@ -6,6 +6,7 @@ export LD_LIBRARY_PATH=/mnt/Shared/jlandersen/shared/lib64:$LD_LIBRARY_PATH
 
 echo "beginning with Catalan"
 echo "#################################################################################################################"
+levelNum=$1
 
 cd assignment1/catalan
 mkdir done

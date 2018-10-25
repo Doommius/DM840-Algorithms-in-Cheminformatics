@@ -18,9 +18,9 @@ cd assignment1/catalan
 mkdir done
 for i in $(seq 1 56); do
     sh solve.sh $i
-    mkdir done/$1
-    mv summary/summary.pdf done/$1
-    mv -r out /done/$1/
+    mkdir done/$i
+    mv summary/summary.pdf done/$i/
+    mv -r out done/$i/
 done
 
 echo "#################################################################################################################"

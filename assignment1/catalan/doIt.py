@@ -21,9 +21,9 @@ dg.calc()
 
 for a in inputGraphs: a.print()
 
-#dg.print(dgPrinter) ##This eats all the memory.
+dg.print(dgPrinter) ##This eats all the memory.
 #postSection("Product Graphs")
-#for a in dg.products: a.print() # this can take a while in the post processing
+for a in dg.products: a.print() # this can take a while in the post processing
 
 flow = dgFlow(dg)
 flow.objectiveFunction =  DGFlowLinExp() # important, otherwise the default function will min. #edgesUsed which may take a long time

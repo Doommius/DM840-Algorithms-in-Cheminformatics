@@ -9,12 +9,12 @@ echo "##########################################################################
 
 cd assignment1/catalan
 mkdir done
-for i in $(seq 1 49); do
-    sh solve.sh $i
-    mkdir done/$i
-    cp summary/summary.pdf done/$i/
-    cp -r out done/$i/
-done
+levelNum=$1
+sh solve.sh $i
+mkdir done/$i
+cp summary/summary.pdf done/$i/
+cp -r out done/$i/
+
 
 echo "#################################################################################################################"
 echo "done with Catalan"

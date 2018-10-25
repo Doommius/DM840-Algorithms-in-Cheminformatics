@@ -9,20 +9,17 @@ goal = graphDFS("[0]", "Goal")
 level = graphGML(levelFile, "Start")
 postSection("Loaded Graphs")
 
-
 include("rules.py")
 postSection("Loaded Rules")
 for a in inputRules: a.print()
 
-
 # The following will need improvement, I guess ;)
 strategy = (addSubset(level) >> repeat[steps](inputRules))
 
-dg = dgRuleComp({goal, level}, strategy)
+dg = dgRuleComp({goal, level}, strategy)  
 dg.calc()
 
 for a in inputGraphs: a.print()
-
 
 #dg.print(dgPrinter) ##This eats all the memory.
 #postSection("Product Graphs")

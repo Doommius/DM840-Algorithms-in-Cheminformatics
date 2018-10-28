@@ -16,7 +16,8 @@ for a in inputRules: a.print()
 
 
 # The following will need improvement, I guess ;)
-strategy = (addSubset(level) >> repeat[steps](inputRules))
+
+strategy = (addSubset(level) >> leftPredicate[lambda derivation: all(g.vLabelCount("A") <= 1 for g in derivation.left)](repeat[steps](inputRules)))
 
 dg = dgRuleComp({goal, level}, strategy)
 dg.calc()
@@ -35,4 +36,3 @@ flow.addSink(goal)
 flow.addConstraint(inFlow(level) == 1)
 flow.calc()
 flow.solutions.print(flowPrinter)
-

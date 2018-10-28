@@ -54,4 +54,4 @@ mod.include = include
 levelFile = "levels/level_1.gml"
 steps = 1000000000
 include("doIt.py")
-# PYTHONPATH=::/mnt/nfs/Shared/jlandersen/shared/lib:/home/imada/mjerv15/courses/DM840/catalan
+# PYTHONPATH=::/home/waldgetier/test/modTestInstall/lib::/home/waldgetier/test/modTestInstall/lib:/home/mod/PycharmProjects/DM840/assignment1/catalan

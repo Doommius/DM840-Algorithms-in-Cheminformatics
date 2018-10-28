@@ -9,25 +9,22 @@ goal = graphDFS("[0]", "Goal")
 level = graphGML(levelFile, "Start")
 postSection("Loaded Graphs")
 
-
 include("rules.py")
 postSection("Loaded Rules")
 for a in inputRules: a.print()
-
 
 # The following will need improvement, I guess ;)
 
 strategy = (addSubset(level) >> leftPredicate[lambda derivation: all(g.vLabelCount("A") <= 1 for g in derivation.left)](repeat[steps](inputRules)))
 
-dg = dgRuleComp({goal, level}, strategy)
+dg = dgRuleComp({goal, level}, strategy)  
 dg.calc()
 
 for a in inputGraphs: a.print()
 
-
-#dg.print(dgPrinter) ##This eats all the memory.
+dg.print(dgPrinter) ##This eats all the memory.
 #postSection("Product Graphs")
-#for a in dg.products: a.print() # this can take a while in the post processing
+for a in dg.products: a.print() # this can take a while in the post processing
 
 flow = dgFlow(dg)
 flow.objectiveFunction =  DGFlowLinExp() # important, otherwise the default function will min. #edgesUsed which may take a long time

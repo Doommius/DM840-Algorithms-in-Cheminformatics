@@ -1,0 +1,28 @@
+Running VM ---------------------------------------------------------
+Executing code from 'doStuff.py'
+Executing code from 'grammar.py'
+Traceback (most recent call last):
+  File "out/input", line 54, in <module>
+    include("doStuff.py")
+  File "out/input", line 44, in include
+    exec(code, globals())
+  File "doStuff.py", line 1, in <module>
+    include("grammar.py")
+  File "out/input", line 44, in include
+    exec(code, globals())
+  File "grammar.py", line 3, in <module>
+    ketoEnol_F = ruleGML("keto_enol_forward.gml")
+  File "/mnt/nfs/Shared/jlandersen/shared/lib/mod/__init__.py", line 587, in ruleGML
+    a = mod_.ruleGML(s, invert)
+mod.mod_.InputError: Parsing failed at 22:11:
+        op
+----------^
+Expected value.
+End of x3 error.
+
+Could not load rule from file 'keto_enol_forward.gml'.
+
+
+real	0m1.424s
+user	0m0.175s
+sys	0m0.040s

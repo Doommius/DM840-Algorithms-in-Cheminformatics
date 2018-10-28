@@ -16,8 +16,9 @@ for i in $(seq 1 2); do
     echo "#################################################################################################################"
     sh solve.sh $i
     ssh alzira 'mkdir WWWpublic/dm840/assignment1/catalan/$i'
+    ssh alzira 'mkdir WWWpublic/dm840/assignment1/catalan/$i/out'
     scp summary/summary.pdf alzira:WWWpublic/dm840/assignment1/catalan/$i/
-    scp -r out/*.pdf alzira:WWWpublic/dm840/assignment1/catalan/$i/
+    scp -r out/*.pdf alzira:WWWpublic/dm840/assignment1/catalan/$i/out
     ssh alzira 'chmod -R 777 WWWpublic/* '
 done
 

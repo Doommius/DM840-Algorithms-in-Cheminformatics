@@ -6,18 +6,14 @@ export LD_LIBRARY_PATH=/mnt/Shared/jlandersen/shared/lib64:$LD_LIBRARY_PATH
 
 echo "beginning with Catalan"
 echo "#################################################################################################################"
-
 cd assignment1/catalan
-mkdir done
-for i in $(seq 1 49); do
+for i in $(seq 1 56); do
     sh solve.sh $i
-    mkdir done/$i
-    cp summary/summary.pdf done/$i/
-    cp -r out done/$i/
+    mv summary/summary.pdf summary/catalan$i.pdf
+    scp summary/catalan$i.pdf alzira:WWWpublic/dm840/
+    ssh alzira 'chmod -R 777 WWWpublic/* '
 done
 
 echo "#################################################################################################################"
 echo "done with Catalan"
 echo "#################################################################################################################"
-
-

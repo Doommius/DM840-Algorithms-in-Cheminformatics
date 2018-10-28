@@ -13,7 +13,7 @@ ssh alzira 'mkdir WWWpublic/dm840/assignment1/catalan'
 for i in $(seq 1 56); do
     sh solve.sh $i
     ssh alzira 'mkdir WWWpublic/dm840/assignment1/catalan/$i'
-    scp summary/summary.pdf alzira:WWWpublic/dm840/assignment1/catalan/$i
+    scp summary/summary.pdf alzira:WWWpublic/dm840/assignment1/catalan/$i/
     scp -r out alzira:WWWpublic/dm840/assignment1/catalan/$i/out
     ssh alzira 'chmod -R 777 WWWpublic/* '
 done

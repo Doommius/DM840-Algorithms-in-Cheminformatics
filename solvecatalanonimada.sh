@@ -7,6 +7,8 @@ echo "beginning with Catalan"
 echo "#################################################################################################################"
 cd assignment1/catalan
 
+
+ssh alzira 'mkdir WWWpublic/dm840/assignment1'
 ssh alzira 'mkdir WWWpublic/dm840/assignment1/catalan'
 for i in $(seq 1 56); do
     sh solve.sh $i

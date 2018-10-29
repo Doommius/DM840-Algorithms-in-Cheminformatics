@@ -8,20 +8,22 @@ echo "##########################################################################
 cd assignment1/catalan
 
 
-ssh alzira 'mkdir WWWpublic/dm840/assignment1'
-ssh alzira 'mkdir WWWpublic/dm840/assignment1/catalan'
+mkdir done
 for i in $(seq 1 2); do
     echo "#################################################################################################################"
     echo "Starting with $i"
     echo "#################################################################################################################"
     sh solve.sh $i
-    ssh alzira 'mkdir WWWpublic/dm840/assignment1/catalan/$i'
-    ssh alzira 'mkdir WWWpublic/dm840/assignment1/catalan/$i/out'
-    scp summary/summary.pdf alzira:WWWpublic/dm840/assignment1/catalan/$i/
-    scp -r out/*.pdf alzira:WWWpublic/dm840/assignment1/catalan/$i/out
-    ssh alzira 'chmod -R 777 WWWpublic/* '
-done
+    mkdir done/$i
+    mkdir done/$i/out
+    cp summary/summary.pdf done/$i/
+    cp out/*.pdf done/$i/out/
 
+done
+ssh alzira 'mkdir WWWpublic/dm840/assignment1'
+ssh alzira 'mkdir WWWpublic/dm840/assignment1/catalan'
+scp -r done alzira:WWWpublic/dm840/assignment1/catalan
+ssh alzira 'chmod -R 777 WWWpublic/* '
 echo "#################################################################################################################"
 echo "done with Catalan"
 echo "#################################################################################################################"

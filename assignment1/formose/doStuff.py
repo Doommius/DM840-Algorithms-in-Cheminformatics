@@ -8,17 +8,17 @@ flowPrinter = DGFlowPrinter()
 flowPrinter.printUnfiltered = False
 
 # Uncomment the following (and comment out line 23-26) in order to see node IDs
- graphLikePrinter = GraphPrinter()
- graphLikePrinter.withIndex = True
+graphLikePrinter = GraphPrinter()
+graphLikePrinter.withIndex = True
 
- molLikePrinter = GraphPrinter()
- molLikePrinter.setReactionDefault()
- molLikePrinter.withIndex = True
+molLikePrinter = GraphPrinter()
+molLikePrinter.setReactionDefault()
+molLikePrinter.withIndex = True
 
- postSection("Loaded Graphs")
+postSection("Loaded Graphs")
 for a in g: a.print()
 postSection("Loaded Rules")
- for a in r: a.print(graphLikePrinter, molLikePrinter)
+for a in r: a.print(graphLikePrinter, molLikePrinter)
 
 postSection("Loaded Graphs")
 for a in inputGraphs: a.print()

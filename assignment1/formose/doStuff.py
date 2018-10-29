@@ -16,9 +16,9 @@ molLikePrinter.setReactionDefault()
 molLikePrinter.withIndex = True
 
 postSection("Loaded Graphs")
-for a in g: a.print()
+for a in inputGraphs: a.print()
 postSection("Loaded Rules")
-for a in r: a.print(graphLikePrinter, molLikePrinter)
+for a in inputRules: a.print(graphLikePrinter, molLikePrinter)
 
 postSection("Loaded Graphs")
 for a in inputGraphs: a.print()

@@ -19,7 +19,7 @@ for i in $(seq $levelNumstart $levelNumend); do
     mkdir done/$i/out
     cp summary/summary.pdf done/$i/
     cp out/*.pdf done/$i/out/
-    cp out/*.svg done/$i/out/
+    cp out/*.svg done/$i/out/       
 
 done
 ssh alzira 'mkdir WWWpublic/dm840/assignment1'

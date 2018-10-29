@@ -30,8 +30,8 @@ rule [
 	    nodeLabels [ label "O" ]
 	]
 	constrainAdj [
-		id 5
-	    op "="
+		id 6
+	    op "-"
 	    count 1
 	    nodeLabels [ label "O" ]
 	]

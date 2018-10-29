@@ -22,13 +22,13 @@ rule [
         edge [ source 6 target 1 label "-" ]
 	]	
 	constrainAdj [
-		id 1
+		id 2
 	    op "="
 	    count 1
 	    nodeLabels [ label "O" ]
 	]
 	constrainAdj [
-		id 5
+		id 4
 	    op "="
 	    count 1
 	    nodeLabels [ label "O" ]

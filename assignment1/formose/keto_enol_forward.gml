@@ -17,9 +17,9 @@ rule [
         edge [ source 2 target 3 label "-" ]
         edge [ source 3 target 4 label "-" ]
 	]
-	constrainAdj [
-		id 1
-	    op "-"
+		constrainAdj [
+		id 2
+	    op "="
 	    count 1
 	    nodeLabels [ label "O" ]
 	]

@@ -1,2 +1,2 @@
-PCbase = smiles("C[U]OCC(H)(OC[U])CO[U]", "PCbase")
+PCbase = smiles("[Au]COCC(@H)(OC[Au]CO[Au])", "PCbase")
 

@@ -1,9 +1,5 @@
 include("grammar.py")
 
-# Study the PPP example in order to understand what you see here.
-# You probably want to play with the strategies when you design your
-# rules.
-
 flowPrinter = DGFlowPrinter()
 flowPrinter.printUnfiltered = False
 
@@ -36,13 +32,3 @@ dg = dgRuleComp(inputGraphs,
 dg.calc()
 
 dg.print()
-
-# Do the following only if you know that you do not have too many products.
-
-#postSection("All Vertex Graphs")
-#for a in dg.vertexGraphs: a.print()
-
-
-# Choose one of the two following options:
-# 1.) a normal query
-

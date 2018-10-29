@@ -3,13 +3,14 @@ export PATH=$MOD_INSTALL_PREFIX/bin:$PATH
 export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:$MOD_INSTALL_PREFIX/lib/pkgconfig
 export LD_LIBRARY_PATH=/mnt/Shared/jlandersen/shared/lib64:$LD_LIBRARY_PATH
 
+levelNumstart=$1
+levelNumend=$2
 echo "beginning with Catalan"
 echo "#################################################################################################################"
 cd assignment1/catalan
-
-
 mkdir done
-for i in $(seq 1 2); do
+
+for i in $(seq $levelNumstart $levelNumend); do
     echo "#################################################################################################################"
     echo "Starting with $i"
     echo "#################################################################################################################"
@@ -18,6 +19,7 @@ for i in $(seq 1 2); do
     mkdir done/$i/out
     cp summary/summary.pdf done/$i/
     cp out/*.pdf done/$i/out/
+    cp out/*.svg done/$i/out/
 
 done
 ssh alzira 'mkdir WWWpublic/dm840/assignment1'

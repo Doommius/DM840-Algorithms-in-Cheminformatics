@@ -17,7 +17,7 @@ for i in $(seq $levelNumstart $levelNumend); do
     sh solve.sh $i
     mkdir done/$i
     mkdir done/$i/out
-    cp summary/summary.pdf done/$i/
+    cp summary/summary.pdf done/$i/summary.pdf
     cp out/*.pdf done/$i/out/
     cp out/*.svg done/$i/out/       
 

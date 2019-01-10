@@ -171,7 +171,7 @@ std::vector <std::shared_ptr<mod::rule::Rule>> doStuff(const std::vector <std::s
         setById(6, 4);
         setById(7, 13);
         setById(8, 14);
-        setById(9, 11;
+        setById(9, 11);
         setById(10, 12);
         setById(11, 7);
         setById(12, 8);

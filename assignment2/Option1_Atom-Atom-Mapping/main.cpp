@@ -173,19 +173,19 @@ std::vector <std::shared_ptr<mod::rule::Rule>> doStuff(const std::vector <std::s
         setById(7, 16);
         setById(8, 15);
 
-
-        setById(9, 3);
-        setById(10, 4);
-        setById(11, 5);
-        setById(12, 6);
-        setById(13, 9);
-        setById(14, 11);
-        setById(15, 12);
-        setById(16, 13);
-        setById(17, 19);
-        setById(18, 20);
-        setById(19, 17);
-        setById(20, 18);
+//
+//        setById(9, 3);
+//        setById(10, 4);
+//        setById(11, 5);
+//        setById(12, 6);
+//        setById(13, 9);
+//        setById(14, 11);
+//        setById(15, 12);
+//        setById(16, 13);
+//        setById(17, 19);
+//        setById(18, 20);
+//        setById(19, 17);
+//        setById(20, 18);
 
         vertexMaps.push_back(vertexMap);
 

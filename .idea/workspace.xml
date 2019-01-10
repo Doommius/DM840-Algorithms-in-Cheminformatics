@@ -61,8 +61,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assignment2/Option1_Atom-Atom-Mapping/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="161" selection-start-line="161" selection-start-column="2" selection-end-line="163" selection-end-column="24" />
+            <state relative-caret-position="335">
+              <caret line="175" selection-start-line="175" selection-end-line="175" />
               <folding>
                 <element signature="e#1234#1250#0" expanded="true" />
                 <element signature="e#1413#1429#0" expanded="true" />
@@ -373,15 +373,35 @@
       <option name="project" value="LOCAL" />
       <updated>1547156990679</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="More printing">
+      <created>1547157050094</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1547157050094</updated>
+    </task>
+    <task id="LOCAL-00030" summary="More printing">
+      <created>1547157122980</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1547157122980</updated>
+    </task>
+    <task id="LOCAL-00031" summary="More printing">
+      <created>1547157210225</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1547157210225</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10222000" />
+    <option name="totallyTimeSpent" value="10584000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="960" height="1055" extended-state="4" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49807692" visible="true" weight="0.21225382" />
       <window_info id="Structure" order="1" sideWeight="0.5019231" side_tool="true" weight="0.254251" />
@@ -449,8 +469,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assignment2/Option1_Atom-Atom-Mapping/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="161" selection-start-line="161" selection-start-column="2" selection-end-line="163" selection-end-column="24" />
+        <state relative-caret-position="335">
+          <caret line="175" selection-start-line="175" selection-end-line="175" />
           <folding>
             <element signature="e#1234#1250#0" expanded="true" />
             <element signature="e#1413#1429#0" expanded="true" />

@@ -165,8 +165,8 @@ std::vector <std::shared_ptr<mod::rule::Rule>> doStuff(const std::vector <std::s
         setById(2, 2);
         //second
 
-        setById(3, 8);
-        setById(4, 7);
+        setById(3, 7);
+        setById(4, 8);
         setById(5, 9);
         //Third
         setById(6, 14);

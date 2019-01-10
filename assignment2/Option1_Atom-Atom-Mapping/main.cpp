@@ -162,10 +162,25 @@ std::vector <std::shared_ptr<mod::rule::Rule>> doStuff(const std::vector <std::s
 
     } else if (reaction == 3) {
 
-        setById(0, 0);
+        setById(3, 0);
         setById(1, 1);
-        setById(6, 2);
-        setById(7, 3);
+        setById(0, 2);
+        setById(2, 5);
+        setById(4, 6);
+        setById(5, 3);
+        setById(6, 4);
+        setById(7, 13);
+        setById(8, 14);
+        setById(9, 11;
+        setById(10, 12);
+        setById(11, 7);
+        setById(12, 8);
+        setById(13, 9);
+        setById(14, 10);
+        setById(15, 15);
+        setById(16, 16);
+        setById(17, 17);
+        setById(17, 17);
         vertexMaps.push_back(vertexMap);
 
     } else if (reaction == 2) {

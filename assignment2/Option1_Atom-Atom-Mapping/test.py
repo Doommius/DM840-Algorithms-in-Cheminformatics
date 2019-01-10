@@ -71,6 +71,19 @@ res = doStuff(g7, g8)
 p = GraphPrinter()
 p.withIndex = True
 
+flowPrinter = DGFlowPrinter()
+flowPrinter.printUnfiltered = False
+
+# Uncomment the following (and comment out line 23-26) in order to see node IDs
+graphLikePrinter = GraphPrinter()
+graphLikePrinter.withIndex = True
+
+molLikePrinter = GraphPrinter()
+molLikePrinter.setReactionDefault()
+molLikePrinter.withIndex = True
+
+
+
 for a in inputGraphs: a.print()
 
 # gs=[g1,g2,g3,g4,g5,g6,g7,g8,g9,g10,g11,g12,g13,g14,g15,g16]
@@ -80,3 +93,4 @@ for a in inputGraphs: a.print()
 for a in res:
     a.print(p)
     print(a.getGMLString())
+    a.print(graphLikePrinter, molLikePrinter)

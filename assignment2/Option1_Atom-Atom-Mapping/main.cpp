@@ -137,6 +137,12 @@ std::vector <std::shared_ptr<mod::rule::Rule>> doStuff(const std::vector <std::s
 
     } else if (reaction == 7) {
 
+        setById(0, 0);
+        setById(1, 1);
+        setById(2, 2);
+        setById(3, 4);
+        setById(4, 4);
+
         vertexMaps.push_back(vertexMap);
 
     } else if (reaction == 6) {

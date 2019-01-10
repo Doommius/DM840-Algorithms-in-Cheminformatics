@@ -197,11 +197,15 @@ BOOST_PYTHON_MODULE(DM840) { // this macro argument is the name of the module, i
 int main(int argc, char **argv) {
 	std::vector<std::shared_ptr<mod::graph::Graph> > educts, products;
 	{ // do something else, e.g., take SMILES strings from argv
-		std::shared_ptr<mod::graph::Graph> g1, g2;
+		std::shared_ptr<mod::graph::Graph> g1, g2, g3, g4;
 		g1 = mod::graph::Graph::smiles("OCC=O");
 		g2 = mod::graph::Graph::smiles("OC=CO");
+        g1 = mod::graph::Graph::smiles("C=O", "C=O");
+        g2 = mod::graph::Graph::smiles("C1CCC1");
 		educts.push_back(g1);
 		products.push_back(g2);
+        educts.push_back(g3);
+        products.push_back(g4);
 	}
 	std::vector<std::shared_ptr<mod::rule::Rule> > rules = doStuff(educts, products);
 	for(auto r : rules) r->print();

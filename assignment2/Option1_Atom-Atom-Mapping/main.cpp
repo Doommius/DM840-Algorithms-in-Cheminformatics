@@ -105,14 +105,19 @@ std::vector<std::shared_ptr<mod::rule::Rule> > doStuff(const std::vector<std::sh
 	// WORK AREA: START
 
 
-
 	//
 	std::vector<VertexMap> vertexMaps;
-	{ // this is example code and probably only works when the example graphs are loaded
+	 // this is example code and probably only works when the example graphs are loaded
 		VertexMap vertexMap;
 		auto setById = [&vertexMap, &gEduct, &gProduct](std::size_t idEduct, std::size_t idProduct) {
-			vertexMap.insert(VertexMap::value_type(getVertexFromId(idEduct, gEduct), getVertexFromId(idProduct, gProduct)));
+		  vertexMap.insert(VertexMap::value_type(getVertexFromId(idEduct, gEduct), getVertexFromId(idProduct, gProduct)));
 		};
+
+	if(true){
+		setById(6, 7);
+		setById(7, 6);
+		vertexMaps.push_back(vertexMap);
+	}else{
 		for(std::size_t i = 0; i < 6; i++)
 			setById(i, i);
 		setById(6, 7);
@@ -134,6 +139,9 @@ std::vector<std::shared_ptr<mod::rule::Rule> > doStuff(const std::vector<std::sh
 		setById(6, 4);
 		vertexMaps.push_back(vertexMap);
 	}
+
+
+
         // WORK AREA: END
 	//
 	//

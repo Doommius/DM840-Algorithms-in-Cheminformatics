@@ -161,16 +161,16 @@ std::vector <std::shared_ptr<mod::rule::Rule>> doStuff(const std::vector <std::s
         //First
 //        setById(2, 2);
 //        setById(0, 0);
-//        setById(1, 1);
+        setById(1, 1);
         //second
 
-        setById(3, 8);
-        setById(4, 7);
+//        setById(3, 8);
+//        setById(4, 7);
         setById(5, 9);
         //Third
 //        setById(6, 14);
 //        setById(8, 15);
-//        setById(7, 16);
+        setById(7, 16);
 
         vertexMaps.push_back(vertexMap);
 

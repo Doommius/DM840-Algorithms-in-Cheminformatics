@@ -12,11 +12,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="984b08ff-ce32-41d7-90ce-2ec56472a2af" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/DM840.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DM840.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/Option1_Atom-Atom-Mapping/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/Option1_Atom-Atom-Mapping/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/Option1_Atom-Atom-Mapping/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/Option1_Atom-Atom-Mapping/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/Option1_Atom-Atom-Mapping/test.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/venv/" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -29,11 +26,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assignment2/Option1_Atom-Atom-Mapping/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1062">
-              <caret line="59" selection-start-line="59" selection-end-line="59" />
+            <state relative-caret-position="342">
+              <caret line="80" column="17" selection-start-line="80" selection-start-column="17" selection-end-line="80" selection-end-column="17" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -64,11 +61,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assignment2/Option1_Atom-Atom-Mapping/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="118" column="40" selection-start-line="118" selection-start-column="40" selection-end-line="118" selection-end-column="40" />
+            <state relative-caret-position="270">
+              <caret line="117" column="26" selection-start-line="117" selection-start-column="26" selection-end-line="117" selection-end-column="26" />
               <folding>
                 <element signature="e#1234#1250#0" expanded="true" />
                 <element signature="e#1413#1429#0" expanded="true" />
@@ -107,10 +104,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/assignment2/Option1_Atom-Atom-Mapping/test.py" />
         <option value="$PROJECT_DIR$/assignment2/Option1_Atom-Atom-Mapping/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/assignment2/Option1_Atom-Atom-Mapping/main.cpp" />
+        <option value="$PROJECT_DIR$/assignment2/Option1_Atom-Atom-Mapping/test.py" />
       </list>
     </option>
   </component>
@@ -156,6 +153,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -226,11 +228,25 @@
       <option name="project" value="LOCAL" />
       <updated>1547136511638</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="testing some things.">
+      <created>1547136780336</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1547136780336</updated>
+    </task>
+    <task id="LOCAL-00007" summary="testing some things.">
+      <created>1547137180175</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1547137180175</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3864000" />
+    <option name="totallyTimeSpent" value="4532000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
@@ -264,6 +280,8 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="asd" />
     <MESSAGE value="testing some things." />
     <option name="LAST_COMMIT_MESSAGE" value="testing some things." />
@@ -273,16 +291,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="18" selection-start-line="18" selection-end-line="18" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assignment2/Option1_Atom-Atom-Mapping/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1062">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -305,12 +313,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assignment2/Option1_Atom-Atom-Mapping/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="118" column="40" selection-start-line="118" selection-start-column="40" selection-end-line="118" selection-end-column="40" />
+        <state relative-caret-position="270">
+          <caret line="117" column="26" selection-start-line="117" selection-start-column="26" selection-end-line="117" selection-end-column="26" />
           <folding>
             <element signature="e#1234#1250#0" expanded="true" />
             <element signature="e#1413#1429#0" expanded="true" />
             <element signature="e#6089#6728#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assignment2/Option1_Atom-Atom-Mapping/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="80" column="17" selection-start-line="80" selection-start-column="17" selection-end-line="80" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
           </folding>
         </state>
       </provider>

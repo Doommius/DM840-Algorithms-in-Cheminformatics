@@ -12,10 +12,14 @@ if modValue != ourValue:
 
 # make doStuff a bit more friendly to use
 _doStuff_orig = DM840.doStuff
+
+
 def _doStuff(educts, products):
     return mod._unwrap(_doStuff_orig(
         mod._wrap(mod.VecGraph, educts),
         mod._wrap(mod.VecGraph, products)))
+
+
 DM840.doStuff = _doStuff
 doStuff = _doStuff
 # end of friendlyfier code
@@ -23,41 +27,58 @@ doStuff = _doStuff
 g1 = [smiles("OCC=O")]
 g2 = [smiles("OC=CO")]
 
-# g3 = [smiles("C=C"),smiles("C=C")]
-# g4 = [smiles("C1CCC1")]
-#
-# g5 = [smiles("O"),smiles("Cl"),smiles("CC(=O)OCC")]
-# g6 = [smiles("Cl"),smiles("OCC"),smiles("CC(=O)O")]
-#
-# g7 = [smiles("C1C(O)CC(O)C(O)C1")]
-# g8 = [smiles("C=CO"),smiles("C=CO"),smiles("C=CO")]
-#
-# g9= [smiles("CC=CC=CC"), smiles("OC1C=CC=CC=1")]
-# g10 = [smiles("C=CC=CC=C"), smiles("OC(=C)C=CC=C")]
-#
-# g11= [smiles("CC"), smiles("OC1C=CC=CC=1")]
-# g12 = [smiles("C=C"), smiles("OC(=C)C=CC=C")]
-#
-# g13= [smiles("OP(=O)(O)OP(=O)(O)O"), smiles("O")]
-# g14 = [smiles("O=P(O)(O)O"), smiles("O=P(O)(O)O")]
-#
-# g15= [smiles("C#N"), smiles("C#N")]
-# g16 = [smiles("N=CC#N")]
+g3 = [smiles("C=C"), smiles("C=C")]
+g4 = [smiles("C1CCC1")]
 
-res = doStuff(g1, g2)
+g5 = [smiles("O"), smiles("Cl"), smiles("CC(=O)OCC")]
+g6 = [smiles("Cl"), smiles("OCC"), smiles("CC(=O)O")]
+
+g7 = [smiles("C1C(O)CC(O)C(O)C1")]
+g8 = [smiles("C=CO"), smiles("C=CO"), smiles("C=CO")]
+
+g9 = [smiles("CC=CC=CC"), smiles("OC1C=CC=CC=1")]
+g10 = [smiles("C=CC=CC=C"), smiles("OC(=C)C=CC=C")]
+
+g11 = [smiles("CC"), smiles("OC1C=CC=CC=1")]
+g12 = [smiles("C=C"), smiles("OC(=C)C=CC=C")]
+
+g13 = [smiles("OP(=O)(O)OP(=O)(O)O"), smiles("O")]
+g14 = [smiles("O=P(O)(O)O"), smiles("O=P(O)(O)O")]
+
+g15 = [smiles("C#N"), smiles("C#N")]
+g16 = [smiles("N=CC#N")]
+
+res1 = doStuff(g1, g2)
+
+res2 = doStuff(g3, g4)
+
+res3 = doStuff(g5, g6)
+
+res4 = doStuff(g7, g8)
+
+res5 = doStuff(g9, g10)
+
+res6 = doStuff(g11, g12)
+
+res7 = doStuff(g13, g14)
+
+res8 = doStuff(g15, g16)
+
+allres = [res1, res2, res3, res4, res5, res6, res7, res8]
 
 # res = doStuff([g15], [g16])
 
 p = GraphPrinter()
 p.withIndex = True
 
-for a in inputGraphs: a.print()
+for a in inputGraphs: a.
+print()
 
 # gs=[g1,g2,g3,g4,g5,g6,g7,g8,g9,g10,g11,g12,g13,g14,g15,g16]
 # for g in gs:
 #     for h in gs:
 #        h[0].print(p)
-
-for a in res:
-    a.print(p)
-    print(a.getGMLString())
+for res in allres:
+    for a in res1:
+        a.print(p)
+        print(a.getGMLString())

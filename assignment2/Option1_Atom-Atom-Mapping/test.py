@@ -54,24 +54,6 @@ gs=[g1,g2,g3,g4,g5,g6,g7,g8,g9,g10,g11,g12,g13,g14,g15,g16]
 for g in gs:
    g[0].print(p)
 
-g1[0].print(p)
-g2[0].print(p)
-g3[0].print(p)
-g4[0].print(p)
-g5[0].print(p)
-g6[0].print(p)
-g7[0].print(p)
-g8[0].print(p)
-g9[0].print(p)
-g10[0].print(p)
-g11[0].print(p)
-g12[0].print(p)
-g13[0].print(p)
-g14[0].print(p)
-g15[0].print(p)
-g16[0].print(p)
-
-
 for a in res:
     a.print(p)
     print(a.getGMLString())

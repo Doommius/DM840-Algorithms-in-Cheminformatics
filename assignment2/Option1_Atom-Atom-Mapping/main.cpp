@@ -151,12 +151,12 @@ std::vector <std::shared_ptr<mod::rule::Rule>> doStuff(const std::vector <std::s
     } else if (reaction == 5) {
 
 
-        setById(0, 0);
-        setById(1, 1);
-        setById(2, 2);
-        setById(3, 3);
-        setById(4, 4);
-        setById(5, 5);
+//        setById(0, 0);
+//        setById(1, 1);
+//        setById(2, 2);
+//        setById(3, 3);
+//        setById(4, 4);
+//        setById(5, 5);
 //        setById(6, 6);
 //        setById(7, 7);
 //        setById(8, 23);

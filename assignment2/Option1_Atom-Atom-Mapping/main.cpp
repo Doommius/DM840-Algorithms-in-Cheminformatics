@@ -168,9 +168,9 @@ std::vector <std::shared_ptr<mod::rule::Rule>> doStuff(const std::vector <std::s
         setById(4, 8);
         setById(5, 9);
         //Third
-        setById(6, 14);
-        setById(8, 15);
-        setById(7, 16);
+//        setById(6, 14);
+//        setById(8, 15);
+//        setById(7, 16);
 
         vertexMaps.push_back(vertexMap);
 

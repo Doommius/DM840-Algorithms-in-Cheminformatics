@@ -159,9 +159,9 @@ std::vector <std::shared_ptr<mod::rule::Rule>> doStuff(const std::vector <std::s
     } else if (reaction == 4) {
 
         //First
-        setById(2, 2);
-        setById(0, 0);
-        setById(1, 1);
+//        setById(2, 2);
+//        setById(0, 0);
+//        setById(1, 1);
         //second
 
         setById(3, 7);

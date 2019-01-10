@@ -93,4 +93,4 @@ for a in inputGraphs: a.print()
 for a in res:
     a.print(p)
     print(a.getGMLString())
-    a.print(graphLikePrinter, molLikePrinter)
+    # a.print(graphLikePrinter, molLikePrinter)

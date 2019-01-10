@@ -48,23 +48,23 @@ g14 = [smiles("O=P(O)(O)O"), smiles("O=P(O)(O)O")]
 g15 = [smiles("C#N"), smiles("C#N")]
 g16 = [smiles("N=CC#N")]
 
-res1 = doStuff(g1, g2)
+res1 = doStuff(g3, g4)
 
-res2 = doStuff(g3, g4)
+# res2 = doStuff(g3, g4)
 
-res3 = doStuff(g5, g6)
+# res3 = doStuff(g5, g6)
 
-res4 = doStuff(g7, g8)
+# res4 = doStuff(g7, g8)
 
-res5 = doStuff(g9, g10)
+# res5 = doStuff(g9, g10)
 
-res6 = doStuff(g11, g12)
+# res6 = doStuff(g11, g12)
 
-res7 = doStuff(g13, g14)
+# res7 = doStuff(g13, g14)
 
-res8 = doStuff(g15, g16)
+# res8 = doStuff(g15, g16)
 
-allres = [res1, res2, res3, res4, res5, res6, res7, res8]
+# allres = [res1, res2, res3, res4, res5, res6, res7, res8]
 
 # res = doStuff([g15], [g16])
 
@@ -77,7 +77,6 @@ for a in inputGraphs: a.print()
 # for g in gs:
 #     for h in gs:
 #        h[0].print(p)
-for res in allres:
-    for a in res1:
-        a.print(p)
-        print(a.getGMLString())
+for a in res:
+    a.print(p)
+    print(a.getGMLString())

@@ -120,7 +120,11 @@ std::vector <std::shared_ptr<mod::rule::Rule>> doStuff(const std::vector <std::s
 
     int reaction = 4;
 
-    if (reaction == 8) {
+    if (reaction == 0) {
+
+
+
+    } else if (reaction == 8) {
 
         setById(0, 0);
         setById(1, 1);
@@ -154,10 +158,6 @@ std::vector <std::shared_ptr<mod::rule::Rule>> doStuff(const std::vector <std::s
 
     } else if (reaction == 4) {
 
-        setById(0, 0);
-        setById(1, 1);
-        setById(6, 2);
-        setById(7, 3);
         vertexMaps.push_back(vertexMap);
 
     } else if (reaction == 3) {

@@ -50,6 +50,9 @@ res = doStuff(g1, g2)
 
 p = GraphPrinter()
 p.withIndex = True
+gs=[g1,g2,g3,g4,g5,g6,g7,g8,g9,g10,g11,g12,g13,g14,g15,g16]
+for g in gs:
+   g[0].print(p)
 
 g1[0].print(p)
 g2[0].print(p)

@@ -113,10 +113,10 @@ std::vector<std::shared_ptr<mod::rule::Rule> > doStuff(const std::vector<std::sh
 		  vertexMap.insert(VertexMap::value_type(getVertexFromId(idEduct, gEduct), getVertexFromId(idProduct, gProduct)));
 		};
 
-	for	(std::size_t i = 0; i < 6; i++)
-        setById(i, i);
-    vertexMaps.push_back(vertexMap);
-    vertexMap.clear();
+//	for	(std::size_t i = 0; i < 6; i++)
+//        setById(i, i);
+//    vertexMaps.push_back(vertexMap);
+//    vertexMap.clear();
 
     setById(1, 1);
     setById(2, 3);

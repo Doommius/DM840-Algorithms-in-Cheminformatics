@@ -48,11 +48,11 @@ g14 = [smiles("O=P(O)(O)O"), smiles("O=P(O)(O)O")]
 g15 = [smiles("C#N"), smiles("C#N")]
 g16 = [smiles("N=CC#N")]
 
-res = doStuff(g3, g4)
+# res = doStuff(g1, g2)
 
-# res2 = doStuff(g3, g4)
+# res = doStuff(g3, g4)
 #
-# res3 = doStuff(g5, g6)
+res = doStuff(g5, g6)
 #
 # res4 = doStuff(g7, g8)
 #

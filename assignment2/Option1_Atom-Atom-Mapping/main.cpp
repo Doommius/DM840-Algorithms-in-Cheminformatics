@@ -117,7 +117,55 @@ int reaction = 2
 //        setById(i, i);
 //    vertexMaps.push_back(vertexMap);
 //    vertexMap.clear();
-if(reaction = 2) {
+	if(reaction = 8) {
+
+		setById(0, 0);
+		setById(1, 1);
+		setById(6, 2);
+		setById(7, 3);
+		vertexMaps.push_back(vertexMap);
+
+	}else 	if(reaction = 7) {
+
+		setById(0, 0);
+		setById(1, 1);
+		setById(6, 2);
+		setById(7, 3);
+		vertexMaps.push_back(vertexMap);
+
+	}else 	if(reaction = 6) {
+
+		setById(0, 0);
+		setById(1, 1);
+		setById(6, 2);
+		setById(7, 3);
+		vertexMaps.push_back(vertexMap);
+
+	}else 	if(reaction = 5) {
+
+		setById(0, 0);
+		setById(1, 1);
+		setById(6, 2);
+		setById(7, 3);
+		vertexMaps.push_back(vertexMap);
+
+	}else 	if(reaction = 4) {
+
+		setById(0, 0);
+		setById(1, 1);
+		setById(6, 2);
+		setById(7, 3);
+		vertexMaps.push_back(vertexMap);
+
+	}else 	if(reaction = 3) {
+
+		setById(0, 0);
+		setById(1, 1);
+		setById(6, 2);
+		setById(7, 3);
+		vertexMaps.push_back(vertexMap);
+
+	}else if(reaction = 2) {
 
 	setById(0, 0);
 	setById(1, 1);

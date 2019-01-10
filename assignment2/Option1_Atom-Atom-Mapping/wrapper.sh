@@ -10,3 +10,14 @@ cd /home/mjerv15/courses/DM840/assignment2/Option1_Atom-Atom-Mapping
 rm -rf out
 mkdir out
 make -j 2 && ./test $@ && mod_post
+
+
+
+
+mv summary/summary.pdf summary/Atom-Atom-Mapping.pdf
+scp summary/Atom-Atom-Mapping.pdf alzira:WWWpublic/dm840/
+rm summary/Atom-Atom-Mapping.pdf
+
+
+ssh alzira 'chmod -R 777 WWWpublic/* '
+

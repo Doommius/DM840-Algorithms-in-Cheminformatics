@@ -53,20 +53,7 @@ p.withIndex = True
 
 g1.print(p)
 g2.print(p)
-g3.print(p)
-g4.print(p)
-g5.print(p)
-g6.print(p)
-g7.print(p)
-g8.print(p)
-g9.print(p)
-g10.print(p)
-g11.print(p)
-g12.print(p)
-g13.print(p)
-g14.print(p)
-g15.print(p)
-g16.print(p)
+for a in inputGraphs: a.print()
 
 
 for a in res:

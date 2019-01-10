@@ -369,14 +369,13 @@ int main(int argc, char **argv) {
     std::vector <std::shared_ptr<mod::graph::Graph>> educts, products;
     { // do something else, e.g., take SMILES strings from argv
         std::shared_ptr <mod::graph::Graph> g1, g2, g3, g4;
-        g1 = mod::graph::Graph::smiles("OCC=O");
-        g2 = mod::graph::Graph::smiles("OC=CO");
-        g3 = mod::graph::Graph::smiles("C=C");
-        g4 = mod::graph::Graph::smiles("C1CCC1");
+        g1 = mod::graph::Graph::smiles("CC=CC=CC");
+        g2 = mod::graph::Graph::smiles("OC1C=CC=CC=1");
+        g3 = mod::graph::Graph::smiles("C=CC=CC=C";
+        g4 = mod::graph::Graph::smiles("OC(=C)C=CC=C");
         educts.push_back(g1);
-        products.push_back(g2);
-        educts.push_back(g3);
-        educts.push_back(g3);
+        educts.push_back(g2);
+        products.push_back(g3);
         products.push_back(g4);
     }
     std::vector <std::shared_ptr<mod::rule::Rule>> rules = doStuff(educts, products);

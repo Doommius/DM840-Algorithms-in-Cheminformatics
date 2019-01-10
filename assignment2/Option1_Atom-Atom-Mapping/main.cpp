@@ -150,13 +150,28 @@ std::vector <std::shared_ptr<mod::rule::Rule>> doStuff(const std::vector <std::s
 
     } else if (reaction == 5) {
 
-        setById(16, 14);
+
         setById(0, 0);
         setById(1, 1);
         setById(2, 2);
         setById(3, 3);
         setById(4, 4);
         setById(5, 5);
+
+
+        setById(16, 14);
+        setById(17, 15);
+        setById(18, 17);
+        setById(19, 18);
+        setById(20, 19);
+        setById(21, 20);
+        setById(22, 14);
+        setById(23, 14);
+        setById(24, 24);
+        setById(25, 25);
+        setById(26, 26);
+        setById(27, 27);
+        setById(28, 28);
 
         vertexMaps.push_back(vertexMap);
 

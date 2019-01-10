@@ -19,5 +19,5 @@ scp summary/Atom-Atom-Mapping.pdf alzira:WWWpublic/dm840/
 rm summary/Atom-Atom-Mapping.pdf
 
 
-ssh alzira 'chmod -R 777 WWWpublic/* '
+ssh alzira 'chmod 777 WWWpublic/dm840/Atom-Atom-Mapping.pdf'
 

@@ -118,7 +118,7 @@ std::vector <std::shared_ptr<mod::rule::Rule>> doStuff(const std::vector <std::s
 //    vertexMaps.push_back(vertexMap);
 //    vertexMap.clear();
 
-    int reaction = 6;
+    int reaction = 7;
 
     if (reaction == 0) {
 
@@ -164,18 +164,6 @@ std::vector <std::shared_ptr<mod::rule::Rule>> doStuff(const std::vector <std::s
         setById(18, 18);
         setById(19, 19);
         setById(20, 15);
-
-
-
-
-
-
-
-
-
-
-
-
 
         vertexMaps.push_back(vertexMap);
 

@@ -12,11 +12,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="984b08ff-ce32-41d7-90ce-2ec56472a2af" name="Default Changelist" comment="">
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/.idea/DM840.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DM840.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment2/Option1_Atom-Atom-Mapping/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment2/Option1_Atom-Atom-Mapping/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/Option1_Atom-Atom-Mapping/main.cpp" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <ignored path="$PROJECT_DIR$/venv/" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -32,8 +36,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assignment2/Option1_Atom-Atom-Mapping/test.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="1062">
               <caret line="59" selection-start-line="59" selection-end-line="59" />
+=======
+            <state relative-caret-position="199">
+              <caret line="28" column="31" lean-forward="true" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+>>>>>>> Stashed changes
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -67,6 +76,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assignment2/Option1_Atom-Atom-Mapping/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="245">
               <caret line="118" column="40" selection-start-line="118" selection-start-column="40" selection-end-line="118" selection-end-column="40" />
               <folding>
@@ -83,6 +93,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="252">
               <caret line="14" selection-start-line="14" selection-end-line="14" />
+=======
+            <state relative-caret-position="17">
+              <caret line="113" column="85" selection-start-line="113" selection-start-column="85" selection-end-line="113" selection-end-column="85" />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
@@ -139,6 +153,15 @@
             <path>
               <item name="DM840" type="b2602c69:ProjectViewProjectNode" />
               <item name="DM840" type="462c0819:PsiDirectoryNode" />
+<<<<<<< Updated upstream
+=======
+              <item name="assignment1" type="462c0819:PsiDirectoryNode" />
+              <item name="formose" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DM840" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DM840" type="462c0819:PsiDirectoryNode" />
+>>>>>>> Stashed changes
               <item name="assignment2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -205,6 +228,7 @@
       <option name="project" value="LOCAL" />
       <updated>1547132172779</updated>
     </task>
+<<<<<<< Updated upstream
     <task id="LOCAL-00003" summary="testing some things.">
       <created>1547136297171</created>
       <option name="number" value="00003" />
@@ -225,15 +249,45 @@
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
       <updated>1547136511638</updated>
+=======
+    <task id="LOCAL-00003" summary="asd">
+      <created>1547134550622</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1547134550622</updated>
+    </task>
+    <task id="LOCAL-00004" summary="asd">
+      <created>1547134693693</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1547134693693</updated>
+    </task>
+    <task id="LOCAL-00005" summary="asd">
+      <created>1547134860238</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1547134860238</updated>
+>>>>>>> Stashed changes
     </task>
     <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< Updated upstream
     <option name="totallyTimeSpent" value="3864000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
+=======
+    <option name="totallyTimeSpent" value="5000000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
+>>>>>>> Stashed changes
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.103521876" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -278,8 +332,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assignment2/Option1_Atom-Atom-Mapping/test.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="1062">
           <caret line="59" selection-start-line="59" selection-end-line="59" />
+=======
+        <state relative-caret-position="199">
+          <caret line="28" column="31" lean-forward="true" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+>>>>>>> Stashed changes
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>
@@ -305,6 +364,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assignment2/Option1_Atom-Atom-Mapping/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="245">
           <caret line="118" column="40" selection-start-line="118" selection-start-column="40" selection-end-line="118" selection-end-column="40" />
           <folding>
@@ -312,6 +372,10 @@
             <element signature="e#1413#1429#0" expanded="true" />
             <element signature="e#6089#6728#0" expanded="true" />
           </folding>
+=======
+        <state relative-caret-position="17">
+          <caret line="113" column="85" selection-start-line="113" selection-start-column="85" selection-end-line="113" selection-end-column="85" />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>

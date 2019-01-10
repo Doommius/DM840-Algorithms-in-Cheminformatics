@@ -210,7 +210,7 @@ int main(int argc, char **argv) {
 		std::shared_ptr<mod::graph::Graph> g1, g2, g3, g4;
 		g1 = mod::graph::Graph::smiles("OCC=O");
 		g2 = mod::graph::Graph::smiles("OC=CO");
-        g3 = mod::graph::Graph::smiles("C=O");
+        g3 = mod::graph::Graph::smiles("C=C");
         g4 = mod::graph::Graph::smiles("C1CCC1");
 		educts.push_back(g1);
 		products.push_back(g2);

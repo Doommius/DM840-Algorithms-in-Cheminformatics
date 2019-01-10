@@ -22,6 +22,28 @@ doStuff = _doStuff
 
 g1 = smiles("OCC=O")
 g2 = smiles("OC=CO")
+
+g3 = smiles("C=C, C=C")
+g4 = smiles("C1CCC1")
+
+g5 = smiles("O, Cl, CC(=O)OCC")
+g6 = smiles("Cl, OCC, CC(=O)O")
+
+g7 = smiles("C1C(O)CC(O)C(O)C1")
+g8 = smiles("C=CO, C=CO, C=CO")
+
+g9= smiles("CC=CC=CC, OC1C=CC=CC=1")
+g10 = smiles("C=CC=CC=C, OC(=C)C=CC=C")
+
+g11= smiles("CC, OC1C=CC=CC=1")
+g12 = smiles("C=C, OC(=C)C=CC=C")
+
+g13= smiles("OP(=O)(O)OP(=O)(O)O, O")
+g14 = smiles("O=P(O)(O)O, O=P(O)(O)O")
+
+g15= smiles("C#N, C#N ")
+g16 = smiles("N=CC#N")
+
 res = doStuff([g1], [g2])
 
 p = GraphPrinter()

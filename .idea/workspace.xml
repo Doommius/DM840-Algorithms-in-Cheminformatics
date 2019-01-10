@@ -11,7 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="984b08ff-ce32-41d7-90ce-2ec56472a2af" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/Option1_Atom-Atom-Mapping/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/Option1_Atom-Atom-Mapping/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/venv/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -60,8 +59,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assignment2/Option1_Atom-Atom-Mapping/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-36">
-              <caret line="166" selection-start-line="166" selection-end-line="184" selection-end-column="26" />
+            <state relative-caret-position="324">
+              <caret line="182" column="26" lean-forward="true" selection-start-line="182" selection-start-column="26" selection-end-line="182" selection-end-column="26" />
               <folding>
                 <element signature="e#1234#1250#0" expanded="true" />
                 <element signature="e#1413#1429#0" expanded="true" />
@@ -295,11 +294,25 @@
       <option name="project" value="LOCAL" />
       <updated>1547141590429</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="added counter for what reaction we're at">
+      <created>1547141772885</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1547141772885</updated>
+    </task>
+    <task id="LOCAL-00019" summary="added counter for what reaction we're at">
+      <created>1547142004689</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1547142004689</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7324000" />
+    <option name="totallyTimeSpent" value="8428000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
@@ -357,8 +370,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assignment2/Option1_Atom-Atom-Mapping/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-36">
-          <caret line="166" selection-start-line="166" selection-end-line="184" selection-end-column="26" />
+        <state relative-caret-position="324">
+          <caret line="182" column="26" lean-forward="true" selection-start-line="182" selection-start-column="26" selection-end-line="182" selection-end-column="26" />
           <folding>
             <element signature="e#1234#1250#0" expanded="true" />
             <element signature="e#1413#1429#0" expanded="true" />

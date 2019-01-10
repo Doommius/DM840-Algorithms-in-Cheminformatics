@@ -166,23 +166,23 @@ std::vector <std::shared_ptr<mod::rule::Rule>> doStuff(const std::vector <std::s
 
         setById(0, 2);
         setById(1, 5);
-        setById(2, 6);
+        setById(2, 1);
         setById(3, 0);
-        setById(4, 1);
-        setById(5, 3);
-        setById(6, 4);
+        setById(4, 18);
+        setById(5, 11);
+        setById(6, 12);
         setById(7, 13);
         setById(8, 14);
-        setById(9, 11);
-        setById(10, 12);
-//        setById(11, 7);
-//        setById(12, 8);
-//        setById(13, 9);
-//        setById(14, 10);
-//        setById(15, 15);
-//        setById(16, 16);
-//        setById(17, 17);
-//        setById(18, 18);
+        setById(9, 3);
+        setById(10, 4);
+        setById(11, 15);
+        setById(12, 16);
+        setById(13, 17);
+        setById(14, 6);
+        setById(15, 7);
+        setById(16, 8);
+        setById(17, 9);
+        setById(18, 10);
 
 
 //        setById(2, 0);

@@ -121,7 +121,7 @@ std::vector<std::shared_ptr<mod::rule::Rule> > doStuff(const std::vector<std::sh
     setById(1, 1);
     setById(2, 3);
     setById(3, 2);
-    setById(4, 4;
+    setById(4, 4);
     vertexMaps.push_back(vertexMap);
 
 //		setById(6, 7);

@@ -10,7 +10,9 @@ cd /home/mjerv15/courses/DM840/assignment2/Option1_Atom-Atom-Mapping
 rm -rf out
 make clean
 mkdir out
-make -j 2 && ./test $@ && mod_post
+make -j 8
+
+mod -j 8 -f test.py
 
 
 

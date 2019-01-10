@@ -25,4 +25,4 @@ scp summary/Atom-Atom-Mapping_py.pdf alzira:WWWpublic/dm840/
 rm summary/Atom-Atom-Mapping_py.pdf
 
 ssh alzira 'chmod 777 WWWpublic/dm840/Atom-Atom-Mapping.pdf'
-
+ssh alzira 'chmod 777 WWWpublic/dm840/Atom-Atom-Mapping_py.pdf'

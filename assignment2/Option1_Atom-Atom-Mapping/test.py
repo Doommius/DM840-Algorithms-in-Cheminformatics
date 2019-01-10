@@ -23,26 +23,26 @@ doStuff = _doStuff
 g1 = [smiles("OCC=O")]
 g2 = [smiles("OC=CO")]
 
-g3 = [smiles("C=C"),smiles("C=C")]
-g4 = [smiles("C1CCC1")]
-
-g5 = [smiles("O"),smiles("Cl"),smiles("CC(=O)OCC")]
-g6 = [smiles("Cl"),smiles("OCC"),smiles("CC(=O)O")]
-
-g7 = [smiles("C1C(O)CC(O)C(O)C1")]
-g8 = [smiles("C=CO"),smiles("C=CO"),smiles("C=CO")]
-
-g9= [smiles("CC=CC=CC"), smiles("OC1C=CC=CC=1")]
-g10 = [smiles("C=CC=CC=C"), smiles("OC(=C)C=CC=C")]
-
-g11= [smiles("CC"), smiles("OC1C=CC=CC=1")]
-g12 = [smiles("C=C"), smiles("OC(=C)C=CC=C")]
-
-g13= [smiles("OP(=O)(O)OP(=O)(O)O"), smiles("O")]
-g14 = [smiles("O=P(O)(O)O"), smiles("O=P(O)(O)O")]
-
-g15= [smiles("C#N"), smiles("C#N")]
-g16 = [smiles("N=CC#N")]
+# g3 = [smiles("C=C"),smiles("C=C")]
+# g4 = [smiles("C1CCC1")]
+#
+# g5 = [smiles("O"),smiles("Cl"),smiles("CC(=O)OCC")]
+# g6 = [smiles("Cl"),smiles("OCC"),smiles("CC(=O)O")]
+#
+# g7 = [smiles("C1C(O)CC(O)C(O)C1")]
+# g8 = [smiles("C=CO"),smiles("C=CO"),smiles("C=CO")]
+#
+# g9= [smiles("CC=CC=CC"), smiles("OC1C=CC=CC=1")]
+# g10 = [smiles("C=CC=CC=C"), smiles("OC(=C)C=CC=C")]
+#
+# g11= [smiles("CC"), smiles("OC1C=CC=CC=1")]
+# g12 = [smiles("C=C"), smiles("OC(=C)C=CC=C")]
+#
+# g13= [smiles("OP(=O)(O)OP(=O)(O)O"), smiles("O")]
+# g14 = [smiles("O=P(O)(O)O"), smiles("O=P(O)(O)O")]
+#
+# g15= [smiles("C#N"), smiles("C#N")]
+# g16 = [smiles("N=CC#N")]
 
 res = doStuff(g1, g2)
 

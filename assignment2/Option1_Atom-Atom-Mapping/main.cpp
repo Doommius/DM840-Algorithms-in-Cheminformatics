@@ -103,7 +103,9 @@ std::vector<std::shared_ptr<mod::rule::Rule> > doStuff(const std::vector<std::sh
 
 
 	// WORK AREA: START
-	//asd
+
+
+
 	//
 	std::vector<VertexMap> vertexMaps;
 	{ // this is example code and probably only works when the example graphs are loaded

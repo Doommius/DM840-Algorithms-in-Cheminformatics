@@ -10,8 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="984b08ff-ce32-41d7-90ce-2ec56472a2af" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment2/Option1_Atom-Atom-Mapping/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/Option1_Atom-Atom-Mapping/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/Option1_Atom-Atom-Mapping/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/Option1_Atom-Atom-Mapping/test.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/venv/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,11 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assignment2/Option1_Atom-Atom-Mapping/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="55" column="1" lean-forward="true" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
+            <state relative-caret-position="234">
+              <caret line="36" column="53" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -51,17 +51,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assignment1/formose/doStuff.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="18" selection-start-line="18" selection-end-line="18" selection-end-column="31" />
+            <state relative-caret-position="360">
+              <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="62" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assignment2/Option1_Atom-Atom-Mapping/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="120" column="20" selection-start-line="120" selection-start-column="20" selection-end-line="120" selection-end-column="20" />
+            <state relative-caret-position="360">
+              <caret line="160" column="20" selection-start-line="160" selection-start-column="20" selection-end-line="160" selection-end-column="20" />
               <folding>
                 <element signature="e#1234#1250#0" expanded="true" />
                 <element signature="e#1413#1429#0" expanded="true" />
@@ -99,8 +99,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/assignment2/Option1_Atom-Atom-Mapping/main.cpp" />
         <option value="$PROJECT_DIR$/assignment2/Option1_Atom-Atom-Mapping/test.py" />
+        <option value="$PROJECT_DIR$/assignment2/Option1_Atom-Atom-Mapping/main.cpp" />
       </list>
     </option>
   </component>
@@ -316,18 +316,39 @@
       <option name="project" value="LOCAL" />
       <updated>1547155382103</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="7 and 8 res4">
+      <created>1547155569357</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1547155569357</updated>
+    </task>
+    <task id="LOCAL-00022" summary="7 and 8 res4">
+      <created>1547155773616</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1547155773616</updated>
+    </task>
+    <task id="LOCAL-00023" summary="More printing">
+      <created>1547155964843</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1547155964843</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8736000" />
+    <option name="totallyTimeSpent" value="9387000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49807692" visible="true" weight="0.103521876" />
-      <window_info id="Structure" order="1" sideWeight="0.5019231" side_tool="true" visible="true" weight="0.254251" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49807692" weight="0.103521876" />
+      <window_info id="Structure" order="1" sideWeight="0.5019231" side_tool="true" weight="0.254251" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -356,33 +377,35 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="asd" />
     <MESSAGE value="added counter for what reaction we're at" />
-    <option name="LAST_COMMIT_MESSAGE" value="added counter for what reaction we're at" />
+    <MESSAGE value="7 and 8 res4" />
+    <MESSAGE value="More printing" />
+    <option name="LAST_COMMIT_MESSAGE" value="More printing" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/assignment1/formose/doStuff.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" selection-start-line="18" selection-end-line="18" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assignment2/Option1_Atom-Atom-Mapping/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="120" column="20" selection-start-line="120" selection-start-column="20" selection-end-line="120" selection-end-column="20" />
-          <folding>
-            <element signature="e#1234#1250#0" expanded="true" />
-            <element signature="e#1413#1429#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="360">
+          <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="62" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assignment2/Option1_Atom-Atom-Mapping/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="55" column="1" lean-forward="true" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
+        <state relative-caret-position="234">
+          <caret line="36" column="53" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assignment2/Option1_Atom-Atom-Mapping/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="160" column="20" selection-start-line="160" selection-start-column="20" selection-end-line="160" selection-end-column="20" />
+          <folding>
+            <element signature="e#1234#1250#0" expanded="true" />
+            <element signature="e#1413#1429#0" expanded="true" />
           </folding>
         </state>
       </provider>

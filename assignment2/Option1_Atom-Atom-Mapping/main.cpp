@@ -103,7 +103,7 @@ std::vector<std::shared_ptr<mod::rule::Rule> > doStuff(const std::vector<std::sh
 
 
 	// WORK AREA: START
-
+int reaction = 2
 
 	//
 	std::vector<VertexMap> vertexMaps;
@@ -117,31 +117,37 @@ std::vector<std::shared_ptr<mod::rule::Rule> > doStuff(const std::vector<std::sh
 //        setById(i, i);
 //    vertexMaps.push_back(vertexMap);
 //    vertexMap.clear();
+if(reaction = 2) {
 
-    setById(0, 0);
-    setById(1, 1);
-    setById(6, 2);
-    setById(7, 3);
-    vertexMaps.push_back(vertexMap);
+	setById(0, 0);
+	setById(1, 1);
+	setById(6, 2);
+	setById(7, 3);
+	vertexMaps.push_back(vertexMap);
 
-//		setById(6, 7);
-//		setById(7, 6);
-//		vertexMaps.push_back(vertexMap);
-//
-//		vertexMap.clear();
-//		setById(1, 1);
-//		setById(2, 2);
-//		setById(3, 3);
-//		setById(6, 7);
-//		vertexMaps.push_back(vertexMap);
-//
-//		// this is intended to be a duplicate of the one above
-//		vertexMap.clear();
-//		setById(1, 2);
-//		setById(2, 1);
-//		setById(3, 0);
-//		setById(6, 4);
-//		vertexMaps.push_back(vertexMap);
+}else if(reaction == 1){
+		for	(std::size_t i = 0; i < 6; i++)
+        setById(i, i);
+		setById(6, 7);
+		setById(7, 6);
+		vertexMaps.push_back(vertexMap);
+
+		vertexMap.clear();
+		setById(1, 1);
+		setById(2, 2);
+		setById(3, 3);
+		setById(6, 7);
+		vertexMaps.push_back(vertexMap);
+
+		// this is intended to be a duplicate of the one above
+		vertexMap.clear();
+		setById(1, 2);
+		setById(2, 1);
+		setById(3, 0);
+		setById(6, 4);
+		vertexMaps.push_back(vertexMap);
+}
+
 
 
 

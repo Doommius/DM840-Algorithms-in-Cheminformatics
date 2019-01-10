@@ -157,6 +157,16 @@ std::vector <std::shared_ptr<mod::rule::Rule>> doStuff(const std::vector <std::s
         setById(3, 3);
         setById(4, 4);
         setById(5, 5);
+        setById(6, 6);
+        setById(7, 7);
+        setById(8, 23);
+        setById(9, 8);
+        setById(10, 9);
+        setById(11, 10);
+        setById(12, 11);
+        setById(13, 12);
+        setById(14, 13);
+        setById(15, 28);
 
 
         setById(16, 14);
@@ -171,7 +181,7 @@ std::vector <std::shared_ptr<mod::rule::Rule>> doStuff(const std::vector <std::s
         setById(25, 25);
         setById(26, 26);
         setById(27, 27);
-        setById(28, 28);
+        setById(28, 22);
 
         vertexMaps.push_back(vertexMap);
 

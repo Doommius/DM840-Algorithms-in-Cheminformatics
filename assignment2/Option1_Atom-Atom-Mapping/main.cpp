@@ -114,6 +114,8 @@ std::vector<std::shared_ptr<mod::rule::Rule> > doStuff(const std::vector<std::sh
 		};
 
 	if(true){
+		for(std::size_t i = 0; i < 6; i++)
+			setById(i, i);
 		setById(6, 7);
 		setById(7, 6);
 		vertexMaps.push_back(vertexMap);

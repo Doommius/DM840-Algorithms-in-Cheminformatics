@@ -9,6 +9,7 @@ export LD_LIBRARY_PATH=/mnt/Shared/jlandersen/shared/lib64:$LD_LIBRARY_PATH
 cd /home/mjerv15/courses/DM840/assignment2/Option1_Atom-Atom-Mapping
 rm -rf out
 mkdir out
+make clean
 make -j 2 && ./test $@ && mod_post
 
 

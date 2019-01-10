@@ -159,13 +159,17 @@ std::vector <std::shared_ptr<mod::rule::Rule>> doStuff(const std::vector <std::s
     } else if (reaction == 4) {
 
         //First
-        setById(5, 9);
+        setById(2, 2);
         setById(0, 0);
         setById(1, 1);
         //second
-        setById(2, 2);
 
+        setById(3, 7);
+        setById(4, 8);
+        setById(5, 9);
         //Third
+        setById(6, 14)
+        setById(8, 15)
         setById(7, 16);
 
         vertexMaps.push_back(vertexMap);

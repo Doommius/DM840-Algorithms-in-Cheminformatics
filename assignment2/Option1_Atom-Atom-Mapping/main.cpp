@@ -150,6 +150,8 @@ std::vector <std::shared_ptr<mod::rule::Rule>> doStuff(const std::vector <std::s
 
     } else if (reaction == 5) {
 
+        setById(16, 14);
+
         vertexMaps.push_back(vertexMap);
 
     } else if (reaction == 4) {

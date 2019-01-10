@@ -44,7 +44,9 @@ g14 = smiles("O=P(O)(O)O, O=P(O)(O)O")
 g15= smiles("C#N, C#N ")
 g16 = smiles("N=CC#N")
 
-res = doStuff([g1], [g2])
+# res = doStuff([g1], [g2])
+
+res = doStuff([g15], [g16])
 
 p = GraphPrinter()
 p.withIndex = True

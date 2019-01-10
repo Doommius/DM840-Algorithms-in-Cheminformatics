@@ -174,8 +174,8 @@ std::vector <std::shared_ptr<mod::rule::Rule>> doStuff(const std::vector <std::s
         setById(18, 17);
         setById(19, 18);
         setById(20, 19);
-//        setById(21, 20);
-//        setById(22, 14);
+        setById(21, 20);
+        setById(22, 16);
 //        setById(23, 14);
 //        setById(24, 24);
 //        setById(25, 25);

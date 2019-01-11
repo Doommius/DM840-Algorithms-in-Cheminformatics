@@ -56,7 +56,8 @@ unsigned int bondValue(BondType bt) {
 }
 
 std::vector <std::shared_ptr<mod::rule::Rule>> doStuff(const std::vector <std::shared_ptr<mod::graph::Graph>> &educts,
-                                                       const std::vector <std::shared_ptr<mod::graph::Graph>> &products) {
+                                                       const std::vector <std::shared_ptr<mod::graph::Graph>> &products,
+                                                       int reaction) {
     // first make objects representing the disjoint union of the educts and products
     const auto makeUnion = [](const auto &gs) {
       LUG lug;
@@ -118,7 +119,6 @@ std::vector <std::shared_ptr<mod::rule::Rule>> doStuff(const std::vector <std::s
 //    vertexMaps.push_back(vertexMap);
 //    vertexMap.clear();
 
-    int reaction = 0;
 
     //https://status.digitalocean.com/incidents/7dmnxcvgpq69 when shit hit the fan and everything broke. and then our token experied.
     if (reaction == 0) {
@@ -426,7 +426,7 @@ int main(int argc, char **argv) {
         products.push_back(g3);
         products.push_back(g4);
     }
-    std::vector <std::shared_ptr<mod::rule::Rule>> rules = doStuff(educts, products);
+    std::vector <std::shared_ptr<mod::rule::Rule>> rules = doStuff(educts, products, 2);
     for (auto r : rules)
         r->print();
     return 0;

@@ -26,8 +26,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assignment2/Option1_Atom-Atom-Mapping/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="57" selection-start-line="57" selection-end-line="57" />
+            <state relative-caret-position="234">
+              <caret line="61" selection-start-line="61" selection-end-line="61" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -38,7 +38,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assignment2/Option1_Atom-Atom-Mapping/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="29">
+            <state relative-caret-position="137">
               <caret line="120" column="20" selection-start-line="120" selection-start-column="20" selection-end-line="120" selection-end-column="20" />
               <folding>
                 <element signature="e#1234#1250#0" expanded="true" />
@@ -152,20 +152,6 @@
       <workItem from="1547125827212" duration="892000" />
       <workItem from="1547131931180" duration="1156000" />
       <workItem from="1547133961793" duration="551000" />
-    </task>
-    <task id="LOCAL-00018" summary="added counter for what reaction we're at">
-      <created>1547141772885</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1547141772885</updated>
-    </task>
-    <task id="LOCAL-00019" summary="added counter for what reaction we're at">
-      <created>1547142004689</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1547142004689</updated>
     </task>
     <task id="LOCAL-00020" summary="added counter for what reaction we're at">
       <created>1547155382103</created>
@@ -496,14 +482,28 @@
       <option name="project" value="LOCAL" />
       <updated>1547165890460</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="More printing">
+      <created>1547166071690</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1547166071690</updated>
+    </task>
+    <task id="LOCAL-00068" summary="More printing">
+      <created>1547166215352</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1547166215353</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19162000" />
+    <option name="totallyTimeSpent" value="19419000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1920" height="1055" extended-state="7" />
+    <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49807692" visible="true" weight="0.103521876" />
@@ -576,7 +576,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assignment2/Option1_Atom-Atom-Mapping/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
+        <state relative-caret-position="137">
           <caret line="120" column="20" selection-start-line="120" selection-start-column="20" selection-end-line="120" selection-end-column="20" />
           <folding>
             <element signature="e#1234#1250#0" expanded="true" />
@@ -587,8 +587,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assignment2/Option1_Atom-Atom-Mapping/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        <state relative-caret-position="234">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>

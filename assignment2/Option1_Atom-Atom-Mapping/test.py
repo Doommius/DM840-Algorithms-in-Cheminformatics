@@ -14,10 +14,12 @@ if modValue != ourValue:
 _doStuff_orig = DM840.doStuff
 
 
-def _doStuff(educts, products):
+
+def _doStuff(educts, products, reactions):
     return mod._unwrap(_doStuff_orig(
         mod._wrap(mod.VecGraph, educts),
-        mod._wrap(mod.VecGraph, products)))
+        mod._wrap(mod.VecGraph, products),
+        reactions))
 
 
 DM840.doStuff = _doStuff

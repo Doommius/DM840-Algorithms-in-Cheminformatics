@@ -122,18 +122,16 @@ std::vector <std::shared_ptr<mod::rule::Rule>> doStuff(const std::vector <std::s
 
     //https://status.digitalocean.com/incidents/7dmnxcvgpq69 when shit hit the fan and everything broke. and then our token experied.
     if (reaction == 0) {
-        //TODO Idea 1
+        //TODO Idea 1 (Probably a smarter way of doing it)
         //TODO 1. Find the larges sub graph isomorphiems
         //TODO 2. Map the nodes within this.
         //TODO 3. recurse with smaller and smaller set until all nodes are mapped.
 
-        //TODO Idea 2
+        //TODO Idea 2 (Brute force)
         //TODO Interate over all possible mappings
         //TODO generate a list of rules.
         //TODO Eliminate all but the rule that changes the fewest bonds
 
-        //TODO Idea 3
-        //
 
 
 

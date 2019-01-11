@@ -90,7 +90,9 @@ for a in inputGraphs: a.print()
 # for g in gs:
 #     for h in gs:
 #        h[0].print(p)
-for a in allres:
-    a.print(p)
-    print(a.getGMLString())
-    # a.print(graphLikePrinter, molLikePrinter)
+
+for res in allres:
+    for a in res:
+        a.print(p)
+        print(a.getGMLString())
+        # a.print(graphLikePrinter, molLikePrinter)

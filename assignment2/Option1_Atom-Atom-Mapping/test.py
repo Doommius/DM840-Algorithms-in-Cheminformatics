@@ -59,7 +59,7 @@ res4 = doStuff(g7, g8, 4)
 
 res5 = doStuff(g9, g10, 5)
 
-res7 = doStuff(g11, g12, 6)
+res6 = doStuff(g11, g12, 6)
 
 res7 = doStuff(g13, g14, 7)
 

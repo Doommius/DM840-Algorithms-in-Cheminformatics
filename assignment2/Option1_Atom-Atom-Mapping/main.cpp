@@ -118,9 +118,17 @@ std::vector <std::shared_ptr<mod::rule::Rule>> doStuff(const std::vector <std::s
 //    vertexMaps.push_back(vertexMap);
 //    vertexMap.clear();
 
-    int reaction = 7;
+    int reaction = 0;
 
+    //https://status.digitalocean.com/incidents/7dmnxcvgpq69 when shit hit the fan and everything broke. and then our token experied.
     if (reaction == 0) {
+        //TODO Idea
+
+        //TODO 1. Find the larges sub graph isomorphiems
+
+        //TODO start by removing
+
+
 
 
 

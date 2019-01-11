@@ -14,7 +14,6 @@ if modValue != ourValue:
 _doStuff_orig = DM840.doStuff
 
 
-
 def _doStuff(educts, products, reactions):
     return mod._unwrap(_doStuff_orig(
         mod._wrap(mod.VecGraph, educts),
@@ -60,13 +59,14 @@ res4 = doStuff(g7, g8, 4)
 
 res5 = doStuff(g9, g10, 5)
 
-res6 = doStuff(g11, g12, 6)
+res7 = doStuff(g11, g12, 6)
 
 res7 = doStuff(g13, g14, 7)
 
-res8 = doStuff(g15, g16, 8)
+res8 = doStuff([g15], [g16], 8)
 
 allres = [res1, res2, res3, res4, res5, res6, res7, res8]
+
 
 p = GraphPrinter()
 p.withIndex = True

@@ -151,6 +151,7 @@ std::vector <std::shared_ptr<mod::rule::Rule>> doStuff(const std::vector <std::s
     } else if (reaction == 7) {
 
         setById(0, 0);
+        setById(1, 1);
         setById(2, 4);
         setById(3, 2);
         setById(4, 3);
@@ -164,12 +165,19 @@ std::vector <std::shared_ptr<mod::rule::Rule>> doStuff(const std::vector <std::s
         setById(12, 13);
         setById(13, 12);
         setById(14, 6);
+        setById(15, 15);
+
         vertexMaps.push_back(vertexMap);
 
     } else if (reaction == 6) {
 
+        setById(0, 0);
+        setById(1, 1);
+        setById(2, 2);
+        setById(3, 3);
         setById(5, 4);
         setById(6, 5);
+
         setById(4, 14);
         setById(7, 19);
         setById(8, 6);
@@ -180,11 +188,25 @@ std::vector <std::shared_ptr<mod::rule::Rule>> doStuff(const std::vector <std::s
         setById(13, 12);
         setById(14, 8);
         setById(15, 13);
+        setById(16, 16);
+        setById(17, 17);
+        setById(18, 18);
+        setById(19, 19);
         setById(20, 15);
+
         vertexMaps.push_back(vertexMap);
 
     } else if (reaction == 5) {
 
+
+        setById(0, 0);
+        setById(1, 1);
+        setById(2, 2);
+        setById(3, 3);
+        setById(4, 4);
+        setById(5, 5);
+        setById(6, 6);
+        setById(7, 7);
         setById(8, 22);
         setById(9, 8);
         setById(10, 9);
@@ -193,6 +215,7 @@ std::vector <std::shared_ptr<mod::rule::Rule>> doStuff(const std::vector <std::s
         setById(13, 12);
         setById(14, 13);
         setById(28, 23);
+
         setById(15, 27);
         setById(16, 14);
         setById(17, 15);
@@ -206,11 +229,19 @@ std::vector <std::shared_ptr<mod::rule::Rule>> doStuff(const std::vector <std::s
         setById(25, 25);
         setById(26, 26);
         setById(27, 28);
+
+
         vertexMaps.push_back(vertexMap);
 
     } else if (reaction == 4) {
 
+        //First
+
+        setById(0, 0);
+        setById(1, 1);
+        setById(2, 2);
         //second
+
         setById(3, 7);
         setById(4, 8);
         setById(5, 9);
@@ -218,6 +249,8 @@ std::vector <std::shared_ptr<mod::rule::Rule>> doStuff(const std::vector <std::s
         setById(6, 15);
         setById(7, 16);
         setById(8, 14);
+
+//
         setById(9, 3);
         setById(10, 4);
         setById(11, 5);
@@ -230,10 +263,13 @@ std::vector <std::shared_ptr<mod::rule::Rule>> doStuff(const std::vector <std::s
         setById(18, 20);
         setById(19, 17);
         setById(20, 18);
+
         vertexMaps.push_back(vertexMap);
 
 
     } else if (reaction == 3) {
+
+
 
         setById(0, 2);
         setById(1, 5);
@@ -280,6 +316,8 @@ std::vector <std::shared_ptr<mod::rule::Rule>> doStuff(const std::vector <std::s
 
     } else if (reaction == 2) {
 
+        setById(0, 0);
+        setById(1, 1);
         setById(6, 2);
         setById(7, 3);
         vertexMaps.push_back(vertexMap);
@@ -292,6 +330,9 @@ std::vector <std::shared_ptr<mod::rule::Rule>> doStuff(const std::vector <std::s
         vertexMaps.push_back(vertexMap);
 
         vertexMap.clear();
+        setById(1, 1);
+        setById(2, 2);
+        setById(3, 3);
         setById(6, 7);
         vertexMaps.push_back(vertexMap);
 

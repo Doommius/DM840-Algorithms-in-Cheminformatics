@@ -63,7 +63,7 @@ res7 = doStuff(g11, g12, 6)
 
 res7 = doStuff(g13, g14, 7)
 
-res8 = doStuff([g15], [g16], 8)
+res8 = doStuff(g15, g16, 8)
 
 allres = [res1, res2, res3, res4, res5, res6, res7, res8]
 

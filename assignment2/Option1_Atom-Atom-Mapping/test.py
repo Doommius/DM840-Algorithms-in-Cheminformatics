@@ -52,9 +52,9 @@ g16 = [smiles("N=CC#N")]
 #
 # res = doStuff(g3, g4)
 #
-res = doStuff(g5, g6)
-#
-# res = doStuff(g7, g8)
+# res = doStuff(g5, g6)
+
+res = doStuff(g7, g8)
 #
 # res = doStuff(g9, g10)
 

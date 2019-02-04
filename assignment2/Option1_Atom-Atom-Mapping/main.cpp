@@ -198,7 +198,6 @@ std::vector <std::shared_ptr<mod::rule::Rule>> doStuff(const std::vector <std::s
 
     } else if (reaction == 5) {
 
-
         setById(0, 0);
         setById(1, 1);
         setById(2, 2);

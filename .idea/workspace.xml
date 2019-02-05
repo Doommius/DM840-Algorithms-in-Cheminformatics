@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
-    <generated />
+    <generated>
+      <config projectName="DM840" targetName="DM840" />
+    </generated>
   </component>
   <component name="CMakeSettings">
     <configurations>
@@ -10,7 +12,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="984b08ff-ce32-41d7-90ce-2ec56472a2af" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/assignment2/Option1_Atom-Atom-Mapping/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/Option1_Atom-Atom-Mapping/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/Option1_Atom-Atom-Mapping/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/Option1_Atom-Atom-Mapping/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/venv/" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -20,12 +23,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assignment2/Option1_Atom-Atom-Mapping/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
+            <state relative-caret-position="900">
               <caret line="61" column="4" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="4" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
@@ -37,8 +41,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assignment2/Option1_Atom-Atom-Mapping/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2606">
-              <caret line="183" column="22" lean-forward="true" selection-start-line="183" selection-start-column="22" selection-end-line="183" selection-end-column="22" />
+            <state relative-caret-position="633">
+              <caret line="168" column="10" selection-start-line="168" selection-start-column="10" selection-end-line="168" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -65,8 +69,8 @@
       <list>
         <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/assignment2/Option1_Atom-Atom-Mapping/wrapper.sh" />
-        <option value="$PROJECT_DIR$/assignment2/Option1_Atom-Atom-Mapping/main.cpp" />
         <option value="$PROJECT_DIR$/assignment2/Option1_Atom-Atom-Mapping/test.py" />
+        <option value="$PROJECT_DIR$/assignment2/Option1_Atom-Atom-Mapping/main.cpp" />
       </list>
     </option>
   </component>
@@ -144,20 +148,8 @@
       <workItem from="1547125827212" duration="892000" />
       <workItem from="1547131931180" duration="1156000" />
       <workItem from="1547133961793" duration="551000" />
-    </task>
-    <task id="LOCAL-00011" summary="added counter for what reaction we're at">
-      <created>1547140058972</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1547140058972</updated>
-    </task>
-    <task id="LOCAL-00012" summary="added counter for what reaction we're at">
-      <created>1547140096845</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1547140096845</updated>
+      <workItem from="1549290743558" duration="1050000" />
+      <workItem from="1549352339869" duration="1084000" />
     </task>
     <task id="LOCAL-00013" summary="added counter for what reaction we're at">
       <created>1547140162582</created>
@@ -488,17 +480,30 @@
       <option name="project" value="LOCAL" />
       <updated>1547169428836</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="testing on new VM">
+      <created>1549290908921</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1549290908921</updated>
+    </task>
+    <task id="LOCAL-00061" summary="testing on new VM">
+      <created>1549290953998</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1549290953998</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17232000" />
+    <option name="totallyTimeSpent" value="19222000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
+    <frame x="67" y="25" width="1853" height="889" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7761989" visible="true" weight="0.23319837" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7761989" visible="true" weight="0.12174875" />
       <window_info id="Structure" order="1" sideWeight="0.22380106" side_tool="true" weight="0.23319837" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -514,11 +519,14 @@
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="bottom" id="CMake" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="SciView" order="4" visible="true" weight="0.024291499" />
+      <window_info anchor="right" id="SciView" order="4" visible="true" weight="0.02502085" />
+      <window_info anchor="right" id="R Graphics" order="5" />
+      <window_info anchor="right" id="R Packages" order="6" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -531,7 +539,8 @@
     <MESSAGE value="More printing" />
     <MESSAGE value="try?" />
     <MESSAGE value="all of them" />
-    <option name="LAST_COMMIT_MESSAGE" value="all of them" />
+    <MESSAGE value="testing on new VM" />
+    <option name="LAST_COMMIT_MESSAGE" value="testing on new VM" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/assignment2/Option1_Atom-Atom-Mapping/Makefile">
@@ -567,7 +576,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assignment2/Option1_Atom-Atom-Mapping/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
+        <state relative-caret-position="900">
           <caret line="61" column="4" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="4" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
@@ -577,8 +586,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assignment2/Option1_Atom-Atom-Mapping/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2606">
-          <caret line="183" column="22" lean-forward="true" selection-start-line="183" selection-start-column="22" selection-end-line="183" selection-end-column="22" />
+        <state relative-caret-position="633">
+          <caret line="168" column="10" selection-start-line="168" selection-start-column="10" selection-end-line="168" selection-end-column="10" />
         </state>
       </provider>
     </entry>

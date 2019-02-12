@@ -119,8 +119,7 @@ std::vector <std::shared_ptr<mod::rule::Rule>> doStuff(const std::vector <std::s
 //    vertexMaps.push_back(vertexMap);
 //    vertexMap.clear();
 
-
-    //https://status.digitalocean.com/incidents/7dmnxcvgpq69 when shit hit the fan and everything broke. and then our token experied.
+ //https://status.digitalocean.com/incidents/7dmnxcvgpq69 when shit hit the fan and everything broke. and then our token experied.
     if (reaction == 0) {
         //TODO Idea 1 (Probably a smarter way of doing it)
         //TODO 1. Find the larges sub graph isomorphisms

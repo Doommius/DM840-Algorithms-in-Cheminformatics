@@ -1,4 +1,4 @@
-cd assignment1/catalan
+cd catalan
 mkdir done
 for i in $(seq 1 56); do
     mkdir done/$i/

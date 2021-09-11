@@ -56,8 +56,7 @@ unsigned int bondValue(BondType bt) {
 }
 
 std::vector <std::shared_ptr<mod::rule::Rule>> doStuff(const std::vector <std::shared_ptr<mod::graph::Graph>> &educts,
-                                                       const std::vector <std::shared_ptr<mod::graph::Graph>> &products,
-                                                       int reaction) {
+                                                       const std::vector <std::shared_ptr<mod::graph::Graph>> &products) {
     // first make objects representing the disjoint union of the educts and products
     const auto makeUnion = [](const auto &gs) {
       LUG lug;
@@ -104,249 +103,64 @@ std::vector <std::shared_ptr<mod::rule::Rule>> doStuff(const std::vector <std::s
 
 
     // WORK AREA: START
-
-
-    //
-    std::vector <VertexMap> vertexMaps;
-    // this is example code and probably only works when the example graphs are loaded
+    //asd
     VertexMap vertexMap;
-    auto setById = [&vertexMap, &gEduct, &gProduct](std::size_t idEduct, std::size_t idProduct) {
-      vertexMap.insert(VertexMap::value_type(getVertexFromId(idEduct, gEduct), getVertexFromId(idProduct, gProduct)));
+    auto setById = [&vertexMap, &gEduct, &gProduct](
+        std::size_t idEduct,
+        std::size_t idProduct
+    ) {
+      vertexMap.insert(VertexMap::value_type(
+
+          getVertexFromId(idEduct, gEduct),
+
+          getVertexFromId(idProduct, gProduct))
+
+      );
     };
 
-//	for	(std::size_t i = 0; i < 6; i++)
-//        setById(i, i);
-//    vertexMaps.push_back(vertexMap);
-//    vertexMap.clear();
-
- //https://status.digitalocean.com/incidents/7dmnxcvgpq69 when shit hit the fan and everything broke. and then our token experied.
-    if (reaction == 0) {
-        //TODO Idea 1 (Probably a smarter way of doing it)
-        //TODO 1. Find the larges sub graph isomorphisms
-        //TODO 2. Map the nodes within this.
-        //TODO 3. recurse with smaller and smaller set until all nodes are mapped.
-
-        //TODO Idea 2 (Brute force)
-        //TODO Iterate over all possible mappings
-        //TODO generate a list of rules.
-        //TODO Eliminate all but the rule that changes the fewest bonds
-        //last step won't work. need to group the rules according to educts, then the saame rules applicable to the same groups
-
-
-
-
-
-
-    } else if (reaction == 8) {
-
-        setById(0, 1);
-        setById(1, 0);
-        setById(2, 5);
-        setById(3, 2);
-        setById(4, 3);
-        setById(5, 4);
-
-        vertexMaps.push_back(vertexMap);
-
-    } else if (reaction == 7) {
-
-        //setById(0, 0);
-        //setById(1, 1);
-        setById(2, 4);
-        setById(3, 2);
-        setById(4, 3);
-        setById(5, 9);
-        setById(6, 8);
-        setById(7, 11);
-        setById(8, 10);
-        setById(9, 7);
-        setById(10, 5);
-        setById(11, 14);
-        setById(12, 13);
-        setById(13, 12);
-        setById(14, 6);
-        //setById(15, 15);
-
-        vertexMaps.push_back(vertexMap);
-
-    } else if (reaction == 6) {
-
-        setById(0, 0);
-        setById(1, 1);
-        setById(2, 2);
-        setById(3, 3);
-        setById(5, 4);
-        setById(6, 5);
-
-        setById(4, 14);
-        setById(7, 19);
-        setById(8, 6);
-        setById(9, 7);
-        setById(10, 9);
-        setById(11, 10);
-        setById(12, 11);
-        setById(13, 12);
-        setById(14, 8);
-        setById(15, 13);
-        setById(16, 16);
-        setById(17, 17);
-        setById(18, 18);
-        setById(19, 19);
-        setById(20, 15);
-
-        vertexMaps.push_back(vertexMap);
-
-    } else if (reaction == 5) {
-
-        setById(0, 0);
-        setById(1, 1);
-        setById(2, 2);
-        setById(3, 3);
-        setById(4, 4);
-        setById(5, 5);
-        setById(6, 6);
-        setById(7, 7);
-        setById(8, 22);
-        setById(9, 8);
-        setById(10, 9);
-        setById(11, 10);
-        setById(12, 11);
-        setById(13, 12);
-        setById(14, 13);
-        setById(28, 23);
-
-        setById(15, 27);
-        setById(16, 14);
-        setById(17, 15);
-        setById(18, 17);
-        setById(19, 18);
-        setById(20, 19);
-        setById(21, 20);
-        setById(22, 16);
-        setById(23, 21);
-        setById(24, 24);
-        setById(25, 25);
-        setById(26, 26);
-        setById(27, 28);
-
-
-        vertexMaps.push_back(vertexMap);
-
-    } else if (reaction == 4) {
-
-        //First
-
-        setById(0, 0);
-        setById(1, 1);
-        setById(2, 2);
-        //second
-
-        setById(3, 7);
-        setById(4, 8);
-        setById(5, 9);
-        //Third
-        setById(6, 15);
-        setById(7, 16);
-        setById(8, 14);
-
-//
-        setById(9, 3);
-        setById(10, 4);
-        setById(11, 5);
-        setById(12, 6);
-        setById(13, 9);
-        setById(14, 11);
-        setById(15, 12);
-        setById(16, 13);
-        setById(17, 19);
-        setById(18, 20);
-        setById(19, 17);
-        setById(20, 18);
-
-        vertexMaps.push_back(vertexMap);
-
-
-    } else if (reaction == 3) {
-
-
-
-        setById(0, 2);
-        setById(1, 5);
-        setById(2, 1);
-        setById(3, 0);
-        setById(4, 18);
-        setById(5, 11);
-        setById(6, 12);
-        setById(7, 13);
-        setById(8, 14);
-        setById(9, 3);
-        setById(10, 4);
-        setById(11, 15);
-        setById(12, 16);
-        setById(13, 17);
-        setById(14, 6);
-        setById(15, 7);
-        setById(16, 8);
-        setById(17, 9);
-        setById(18, 10);
-
-
-//        setById(2, 0);
-////        setById(1, 1);
-////        setById(2, 5);
-//        setById(0, 3);
-////        setById(4, 6);
-//        setById(3, 5);
-//        setById(4, 6);
-//        setById(13, 7);
-//        setById(14, 8);
-//        setById(11, 9);
-//        setById(12, 10);
-////        setById(11, 7);
-////        setById(12, 8);
-////        setById(13, 9);
-////        setById(14, 10);
-////        setById(15, 15);
-////        setById(16, 16);
-////        setById(17, 17);
-////        setById(18, 18);
-
-        vertexMaps.push_back(vertexMap);
-
-    } else if (reaction == 2) {
-
-        setById(0, 0);
-        setById(1, 1);
-        setById(6, 2);
-        setById(7, 3);
-        vertexMaps.push_back(vertexMap);
-
-    } else if (reaction == 1) {
-        for (std::size_t i = 0; i < 6; i++)
-            setById(i, i);
+    if (true) {
+        //One way this could be done.
+        //For all Educts,
+        //For all gEducts
+//		for (const auto v : asRange(vertices(gEduct))) {
+//        For        all        edges        in        educt.
+//			for (const auto e : asRange(out_edges(v, gEduct))) {
+//				const auto t = target(e, gEduct);
+//				std::cout << "\t\"" << pMolEduct[e] << "\"\t" << getVertexId(t, gEduct) << std::endl;
+//			}
+//		}
         setById(6, 7);
         setById(7, 6);
         vertexMaps.push_back(vertexMap);
 
-        vertexMap.clear();
-        setById(1, 1);
-        setById(2, 2);
-        setById(3, 3);
-        setById(6, 7);
-        vertexMaps.push_back(vertexMap);
+    } else {
+        //
+        { // this is example code and probably only works when the example graphs are loaded
+            VertexMap vertexMap;
 
-        // this is intended to be a duplicate of the one above
-        vertexMap.clear();
-        setById(1, 2);
-        setById(2, 1);
-        setById(3, 0);
-        setById(6, 4);
-        vertexMaps.push_back(vertexMap);
+            for (std::size_t i = 0; i < 6; i++)
+                setById(i, i);
+
+            setById(6, 7);
+            setById(7, 6);
+            vertexMaps.push_back(vertexMap);
+
+            vertexMap.clear();
+            setById(1, 1);
+            setById(2, 2);
+            setById(3, 3);
+            setById(6, 7);
+            vertexMaps.push_back(vertexMap);
+
+            // this is intended to be a duplicate of the one above
+            vertexMap.clear();
+            setById(1, 2);
+            setById(2, 1);
+            setById(3, 0);
+            setById(6, 4);
+            vertexMaps.push_back(vertexMap);
+        }
     }
-
-
-
-
 
     // WORK AREA: END
     //
@@ -415,17 +229,13 @@ BOOST_PYTHON_MODULE(DM840) { // this macro argument is the name of the module, i
 int main(int argc, char **argv) {
     std::vector <std::shared_ptr<mod::graph::Graph>> educts, products;
     { // do something else, e.g., take SMILES strings from argv
-        std::shared_ptr <mod::graph::Graph> g1, g2, g3, g4;
-        g1 = mod::graph::Graph::smiles("CC=CC=CC");
-        g2 = mod::graph::Graph::smiles("OC1C=CC=CC=1");
-        g3 = mod::graph::Graph::smiles("C=CC=CC=C");
-        g4 = mod::graph::Graph::smiles("OC(=C)C=CC=C");
+        std::shared_ptr <mod::graph::Graph> g1, g2;
+        g1 = mod::graph::Graph::smiles("OCC=O");
+        g2 = mod::graph::Graph::smiles("OC=CO");
         educts.push_back(g1);
-        educts.push_back(g2);
-        products.push_back(g3);
-        products.push_back(g4);
+        products.push_back(g2);
     }
-    std::vector <std::shared_ptr<mod::rule::Rule>> rules = doStuff(educts, products, 2);
+    std::vector <std::shared_ptr<mod::rule::Rule>> rules = doStuff(educts, products);
     for (auto r : rules)
         r->print();
     return 0;

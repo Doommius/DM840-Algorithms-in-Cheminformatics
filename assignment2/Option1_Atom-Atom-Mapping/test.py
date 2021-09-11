@@ -12,15 +12,10 @@ if modValue != ourValue:
 
 # make doStuff a bit more friendly to use
 _doStuff_orig = DM840.doStuff
-
-
-def _doStuff(educts, products, reactions):
+def _doStuff(educts, products):
     return mod._unwrap(_doStuff_orig(
         mod._wrap(mod.VecGraph, educts),
-        mod._wrap(mod.VecGraph, products),
-        reactions))
-
-
+        mod._wrap(mod.VecGraph, products)))
 DM840.doStuff = _doStuff
 doStuff = _doStuff
 # end of friendlyfier code
@@ -28,61 +23,33 @@ doStuff = _doStuff
 g1 = [smiles("OCC=O")]
 g2 = [smiles("OC=CO")]
 
-g3 = [smiles("C=C"), smiles("C=C")]
+g3 = [smiles("C=C"),smiles("C=C")]
 g4 = [smiles("C1CCC1")]
 
-g5 = [smiles("O"), smiles("Cl"), smiles("CC(=O)OCC")]
-g6 = [smiles("Cl"), smiles("OCC"), smiles("CC(=O)O")]
+g5 = [smiles("O"),smiles("Cl"),smiles("CC(=O)OCC")]
+g6 = [smiles("Cl"),smiles("OCC"),smiles("CC(=O)O")]
 
 g7 = [smiles("C1C(O)CC(O)C(O)C1")]
-g8 = [smiles("C=CO"), smiles("C=CO"), smiles("C=CO")]
+g8 = [smiles("C=CO"),smiles("C=CO"),smiles("C=CO")]
 
-g9 = [smiles("CC=CC=CC"), smiles("OC1C=CC=CC=1")]
+g9= [smiles("CC=CC=CC"), smiles("OC1C=CC=CC=1")]
 g10 = [smiles("C=CC=CC=C"), smiles("OC(=C)C=CC=C")]
 
-g11 = [smiles("CC"), smiles("OC1C=CC=CC=1")]
+g11= [smiles("CC"), smiles("OC1C=CC=CC=1")]
 g12 = [smiles("C=C"), smiles("OC(=C)C=CC=C")]
 
-g13 = [smiles("OP(=O)(O)OP(=O)(O)O"), smiles("O")]
+g13= [smiles("OP(=O)(O)OP(=O)(O)O"), smiles("O")]
 g14 = [smiles("O=P(O)(O)O"), smiles("O=P(O)(O)O")]
 
-g15 = [smiles("C#N"), smiles("C#N")]
+g15= [smiles("C#N"), smiles("C#N")]
 g16 = [smiles("N=CC#N")]
 
-res1 = doStuff(g1, g2, 1 )
+res = doStuff(g1, g2)
 
-res2 = doStuff(g3, g4, 2)
-
-res3 = doStuff(g5, g6, 3)
-
-res4 = doStuff(g7, g8, 4)
-
-res5 = doStuff(g9, g10, 5)
-
-res6 = doStuff(g11, g12, 6)
-
-res7 = doStuff(g13, g14, 7)
-
-res8 = doStuff(g15, g16, 8)
-
-allres = [res1, res2, res3, res4, res5, res6, res7, res8]
-
+# res = doStuff([g15], [g16])
 
 p = GraphPrinter()
 p.withIndex = True
-
-flowPrinter = DGFlowPrinter()
-flowPrinter.printUnfiltered = False
-
-# Uncomment the following (and comment out line 23-26) in order to see node IDs
-graphLikePrinter = GraphPrinter()
-graphLikePrinter.withIndex = True
-
-molLikePrinter = GraphPrinter()
-molLikePrinter.setReactionDefault()
-molLikePrinter.withIndex = True
-
-
 
 for a in inputGraphs: a.print()
 
@@ -91,8 +58,6 @@ for a in inputGraphs: a.print()
 #     for h in gs:
 #        h[0].print(p)
 
-for res in allres:
-    for a in res:
-        a.print(p)
-        print(a.getGMLString())
-        # a.print(graphLikePrinter, molLikePrinter)
+for a in res:
+    a.print(p)
+    print(a.getGMLString())
